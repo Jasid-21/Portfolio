@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "id": "00",
+            "name": "Tasks Manager",
+            "desc": "Web application capable of register and show your tasks organizad by deadlines and priority",
+            "price": "$20",
+            "img_url": "images/tasks_manager.png",
+            "path": "https://tasks-app-js.herokuapp.com/",
+            "progress": false
+        },
+        {
+            "id": "01",
+            "name": "Messages App",
+            "desc": "Based on whatsapp web, this app allow you to have a realtime chat via webSocket.",
+            "price": "$20",
+            "img_url": "images/messages_app.png",
+            "path": "https://messages-js.herokuapp.com/",
+            "progress": false
+        },
+        {
+            "id": "02",
+            "name": "Online Store",
+            "desc": "Simulation of an online store with a filter system by name, author and price range.",
+            "price": "$20",
+            "img_url": "images/online_store.png",
+            "path": "https://general-online-store.herokuapp.com/",
+            "progress": false
+        },
+        {
+            "id": "02",
+            "name": "Fruits Shop",
+            "desc": "Created from other web page, this app simulates a fruit shop. It's created with Vue.js",
+            "price": "$20",
+            "img_url": "images/fruits_shop.png",
+            "path": "",
+            "progress": true
+        }
+    ]
+}

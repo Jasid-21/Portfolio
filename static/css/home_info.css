@@ -1,0 +1,51 @@
+/* dark background */
+.dark_bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* slider section */
+.info_section {
+    margin-top: 80px;
+    padding: 45px 5vw 75px;
+    display: flex;
+    position: relative;
+}
+
+.info_section .detail-box {
+    max-width: 600px;
+    color: #ffffff;
+    margin-bottom: 145px;
+}
+
+.info_section .detail-box h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info_section .detail-box p {
+    font-size: 14px;
+    text-shadow: 4px 4px 10px black;
+}
+
+.info_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: var(--blue_color);
+    color: #ffffff;
+    border-radius: 45px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    margin-top: 10px;
+}
+
+.info_section .detail-box a:hover {
+    background-color: var(--blue_color);
+}
