@@ -1,0 +1,27 @@
+{
+  "services": [
+    {
+      "name": "Design process",
+      "imgUrl": "design.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+    },
+
+    {
+      "name": "Frontend development",
+      "imgUrl": "frontend.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+    },
+
+    {
+      "name": "Fullstack development",
+      "imgUrl": "fullstack.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+    },
+
+    {
+      "name": "Service support",
+      "imgUrl": "customer_service.jpg",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+    }
+  ]
+}

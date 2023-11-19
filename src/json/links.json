@@ -9,14 +9,14 @@
 
     {
       "name": "Projects",
-      "url": "#",
+      "url": "#projects-section",
       "accent": true,
       "icon": "fa-toolbox"
     },
 
     {
       "name": "Services",
-      "url": "#",
+      "url": "#services-section",
       "accent": false,
       "icon": "fa-screwdriver-wrench"
     },
