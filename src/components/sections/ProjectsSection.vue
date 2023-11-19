@@ -7,7 +7,9 @@
       </div>
       <div class="upcomming-projects">
         <h4 class="title">Work in progress</h4>
-        <ProjectCard v-for="(p, idx) of upcomming" :key="idx" :project="p" />
+        <div class="items-container">
+          <ProjectCard v-for="(p, idx) of upcomming" :key="idx" :project="p" />
+        </div>
       </div>
     </dis>
   </section>
@@ -39,14 +41,22 @@ const upcomming: Project[] = j_projects.developing;
     .upcomming-projects {
       border-left: 1px solid gray;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
       row-gap: 1rem;
 
       .title {
+        justify-self: center;
         margin: 0;
         margin-bottom: 0.5rem;
+      }
+
+      .items-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
       }
     }
   }
@@ -55,8 +65,26 @@ const upcomming: Project[] = j_projects.developing;
 @media (max-width: 1147px) {
   .projects-section {
     .displayer {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+
       .done-projects {
         row-gap: 1rem;
+      }
+
+      .upcomming-projects {
+        border: none;
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+        .items-container {
+          flex-direction: row;
+          justify-content: center;
+          column-gap: 1rem;
+          flex-wrap: wrap;
+        }
       }
     }
   }
