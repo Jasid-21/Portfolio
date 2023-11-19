@@ -1,0 +1,37 @@
+//* l: lighter version, d: darker version.
+//* s: shadow version, t: transparent version.
+
+$text: #020218;
+$background: #fbfbfe;
+$primary: #121259;
+$secondary: #b7b7f1;
+$accent: #664b92;
+$d_accent: #3b2068;
+
+
+//* Screen sizes;
+$xsm: 500px;
+$sm: 640px;
+$md: 768px;
+$ml: 860px;
+$cml: 925px;
+$lg: 1024px;
+$clg: 1076px;
+$xl: 1280px;
+
+:root {
+  --y_pad: 3rem;
+  --x_pad: 1rem;
+}
+
+@media (min-width: $sm) {
+  :root {
+    --x_pad: 5rem;
+  }
+}
+
+@media (min-width: $md) {
+  :root {
+    --x_pad: 7rem;
+  }
+}

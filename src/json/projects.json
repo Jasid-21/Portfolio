@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "name": "Ice cream website",
+      "technologies": ["Vue.js", "Pinia"],
+      "link": "https://ice-cream-shop-template.vercel.app",
+      "img": "/ice-cream-template.png",
+      "type": "Website"
+    },
+
+    {
+      "name": "Healthy food services",
+      "technologies": ["Vue.js", "Pinia"],
+      "link": "https://helthy-food-service.vercel.app",
+      "img": "/healthy-food-template.png",
+      "type": "Website"
+    },
+
+    {
+      "name": "To do organizer",
+      "technologies": ["Vue.js", "Node.js", "SQL"],
+      "link": "https://todo-list-api-pi.vercel.app/",
+      "img": "/todo-portfolio.png",
+      "type": "App"
+    },
+
+    {
+      "name": "Pokedex Application",
+      "technologies": ["Vue.js", "Vuex"],
+      "link": "https://pokedex-xi-weld.vercel.app/",
+      "img": "/pokedex.png",
+      "type": "App"
+    }
+  ],
+  "developing": [
+    {
+      "name": "Digimon deck builder",
+      "technologies": ["Angular", "Nest.js", "Websocket"],
+      "link": "https://digimon-deck-tester-9e0kro1f8-jasid-21.vercel.app/deckBuilder",
+      "img": "/digimon-deck-builder.png",
+      "type": "App"
+    },
+
+    {
+      "name": "Fast food website",
+      "technologies": ["Vue.js", "Pinia"],
+      "link": "https://fast-food-template.vercel.app",
+      "img": "/fast-food-template.png",
+      "type": "Website"
+    }
+  ]
+}

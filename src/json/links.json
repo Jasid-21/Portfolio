@@ -1,0 +1,38 @@
+{
+  "links": [
+    {
+      "name": "Who am I?",
+      "url": "#top",
+      "accent": false,
+      "icon": "fa-home"
+    },
+
+    {
+      "name": "Projects",
+      "url": "#",
+      "accent": true,
+      "icon": "fa-toolbox"
+    },
+
+    {
+      "name": "Services",
+      "url": "#",
+      "accent": false,
+      "icon": "fa-screwdriver-wrench"
+    },
+
+    {
+      "name": "Technologies",
+      "url": "#",
+      "accent": false,
+      "icon": "fa-code"
+    },
+
+    {
+      "name": "Contact",
+      "url": "#",
+      "accent": false,
+      "icon": "fa-phone"
+    }
+  ]
+}
