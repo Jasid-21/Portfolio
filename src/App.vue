@@ -31,8 +31,8 @@ body {
   font-weight: 400;
 }
 
-section {
-  padding: 130px var(--x_pad);
+section, footer {
+  padding: 100px var(--x_pad);
 }
 
 h1, h2, h3, h4, h5 {

@@ -6,6 +6,7 @@
     <ServicesSection />
     <TechnologiesSection />
     <ContactSection />
+    <FooterSection />
   </div>
 </template>
 
@@ -16,4 +17,5 @@ import HeroSection from '@/components/sections/HeroSection.vue';
 import ProjectsSection from '@/components/sections/ProjectsSection.vue';
 import ServicesSection from '@/components/sections/ServicesSection.vue';
 import TechnologiesSection from '@/components/sections/TechnologiesSection.vue';
+import FooterSection from '@/components/sections/FooterSection.vue';
 </script>

@@ -2,20 +2,21 @@
   <section class="contact-section" id="contact-section">
     <h2 class="section-title">Let's talk</h2>
     <div class="contact-methods-container">
-      <form class="contact-form">
+      <form class="contact-form" ref="form" @submit.prevent="sendEmail">
         <h3 class="form-title">I'll contact you soon</h3>
 
         <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="Complete name">
+        <input type="text" id="name" placeholder="Complete name" name="from_name">
         <br><br>
         <label for="email">Your email</label>
-        <input type="email" id="email" placeholder="someone@example.com">
+        <input type="email" id="email" placeholder="someone@example.com" name="from_email">
         <br><br>
         <label for="name">Your whatsapp (optional)</label>
-        <input type="text" id="phone" placeholder="+123 345 5678909">
+        <input type="text" id="phone" placeholder="+123 345 5678909" name="from_phone">
         <br><br>
         <label for="message">Your message</label>
-        <textarea id="message" cols="30" rows="10" placeholder="Type something here (optional)"></textarea>
+        <textarea id="message" cols="30" rows="10" name="message"
+          placeholder="Type something here (optional)"></textarea>
         <br><br>
         <input type="submit" value="Send!">
       </form>
@@ -27,7 +28,23 @@
 </template>
 
 <script setup lang="ts">
+import emailjs from '@emailjs/browser';
+import { ref } from 'vue';
 
+//* Defined.
+const form = ref<HTMLFormElement>();
+
+//* Functions.
+const sendEmail = () => {
+  if (!form.value) return;
+  emailjs.sendForm('service_yhqcs8h', 'template_37aqibf', form.value, 'mMtSc3MSYDiJ64l2v')
+    .then((result) => {
+        alert("Thanks you! <br/> I'll contact you as soon as possible");
+    }, (error) => {
+        console.log('FAILED...', error.text);
+    }
+  );
+}
 </script>
 
 <style scoped lang="scss">
