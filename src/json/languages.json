@@ -1,0 +1,38 @@
+{
+  "languages": [
+    {
+      "name": "Vue.js",
+      "svg": "",
+      "icon": "fa-vuejs",
+      "color": "#3fb27fff"
+    },
+
+    {
+      "name": "Angular",
+      "svg": "",
+      "icon": "fa-angular",
+      "color": "#d6002fff"
+    },
+
+    {
+      "name": "Node.js",
+      "svg": "",
+      "icon": "fa-node-js",
+      "color": "#88c249ff"
+    },
+
+    {
+      "name": "Python",
+      "svg": "",
+      "icon": "fa-python",
+      "color": "#f7d046ff"
+    },
+
+    {
+      "name": "Java",
+      "svg": "",
+      "icon": "fa-java",
+      "color": "#4f7d9bff"
+    }
+  ]
+}

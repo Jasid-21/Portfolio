@@ -4,6 +4,7 @@
     <HeroSection />
     <ProjectsSection />
     <ServicesSection />
+    <TechnologiesSection />
   </div>
 </template>
 
@@ -12,4 +13,5 @@ import Navbar from '@/components/Navbar.vue';
 import HeroSection from '@/components/sections/HeroSection.vue';
 import ProjectsSection from '@/components/sections/ProjectsSection.vue';
 import ServicesSection from '@/components/sections/ServicesSection.vue';
+import TechnologiesSection from '@/components/sections/TechnologiesSection.vue';
 </script>
