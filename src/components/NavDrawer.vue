@@ -6,7 +6,7 @@
       <ul class="links-container">
         <li class="link-container" :class="{ accent: l.accent }"
           v-for="(l, idx) of links" :key="idx">
-          <a :href="l.url">
+          <a :href="l.url" @click="closeAfterClick">
             <fai class="icon" :icon="'fa-solid ' + l.icon" />
             <span class="link-name">{{ l.name }}</span>
           </a>
@@ -34,6 +34,10 @@ const drawer = ref<HTMLElement>();
 onClickOutside(drawer, () => {
   emit('closeDrawer');
 });
+
+const closeAfterClick = () => {
+  emit('closeDrawer');
+}
 </script>
 
 <style scoped lang="scss">
