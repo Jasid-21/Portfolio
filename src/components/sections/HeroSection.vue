@@ -8,7 +8,7 @@
         <div class="info-container" v-if="showInfo">
           <h2 class="title">Who am I?</h2>
           <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatum eius dolores pariatur nulla eos soluta repudiandae dolorum sapiente saepe dolor tempore cum iusto harum, aliquid, atque nam dicta repellendus!
+            Electronics engineer focused in software development with knowledge about multiple technologies that will build what your business needs.
           </p>
           <a class="projects-link-btn" href="#projects-section">
             <span>Projects</span>

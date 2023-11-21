@@ -3,25 +3,25 @@
     {
       "name": "Design process",
       "imgUrl": "design.jpg",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+      "description": "Service of software design. It depends what you need: User experience, information system, software architecture. Send me a message and we'll talk."
     },
 
     {
       "name": "Frontend development",
       "imgUrl": "frontend.jpg",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+      "description": "Development of the software that will face the final user. Do you need a website to show your products? An application that needs to be beautiful and intuitive? Or something like this web to show your services?"
     },
 
     {
       "name": "Fullstack development",
       "imgUrl": "fullstack.jpg",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+      "description": "Does your application require a more complex information system and will it manage databases and the security of user information? We may be talking about a fullstack application. Go to the Let's Talk section and find out!"
     },
 
     {
       "name": "Service support",
       "imgUrl": "customer_service.jpg",
-      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae animi porro debitis obcaecati veritatis soluta praesentium in nisi odit facilis cupiditate, laudantium omnis itaque! Nisi commodi soluta possimus corporis."
+      "description": "Following successful completion of the service, we can keep in touch to manage any issues that may arise over time and follow up on product performance."
     }
   ]
 }
