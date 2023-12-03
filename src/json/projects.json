@@ -35,7 +35,7 @@
   "developing": [
     {
       "name": "Digimon deck builder",
-      "technologies": ["Angular", "Nest.js", "Websocket"],
+      "technologies": ["Angular"],
       "link": "https://digimon-deck-tester.vercel.app/deckBuilder",
       "img": "/digimon-deck-builder.png",
       "type": "App"
