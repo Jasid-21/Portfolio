@@ -25,11 +25,11 @@
     },
 
     {
-      "name": "Pokedex Application",
-      "technologies": ["Vue.js", "Vuex"],
-      "link": "https://pokedex-xi-weld.vercel.app/",
-      "img": "/pokedex.png",
-      "type": "App"
+      "name": "Fast food website",
+      "technologies": ["Vue.js", "Pinia"],
+      "link": "https://fast-food-template.vercel.app",
+      "img": "/fast-food-template.png",
+      "type": "Website"
     }
   ],
   "developing": [
@@ -42,11 +42,11 @@
     },
 
     {
-      "name": "Fast food website",
-      "technologies": ["Vue.js", "Pinia"],
-      "link": "https://fast-food-template.vercel.app",
-      "img": "/fast-food-template.png",
-      "type": "Website"
+      "name": "Pokedex Application",
+      "technologies": ["Vue.js", "Vuex"],
+      "link": "https://pokedex-xi-weld.vercel.app/",
+      "img": "/pokedex.png",
+      "type": "App"
     }
   ]
 }
