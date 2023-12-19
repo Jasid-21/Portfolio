@@ -30,6 +30,14 @@
       "link": "https://fast-food-template.vercel.app",
       "img": "/fast-food-template.png",
       "type": "Website"
+    },
+
+    {
+      "name": "Electronics Shop",
+      "technologies": ["Vue.js", "Tailwind"],
+      "link": "https://electronica-e-r.vercel.app",
+      "img": "/electronics-shop.png",
+      "type": "Website"
     }
   ],
   "developing": [

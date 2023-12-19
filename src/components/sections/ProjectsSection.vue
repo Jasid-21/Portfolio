@@ -35,6 +35,7 @@ const upcomming: Project[] = j_projects.developing;
       justify-content: center;
       align-items: flex-start;
       column-gap: 1rem;
+      row-gap: 1rem;
       flex-wrap: wrap;
     }
 
