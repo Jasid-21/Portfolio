@@ -47,14 +47,6 @@
       "link": "https://digimon-deck-tester.vercel.app/deckBuilder",
       "img": "/digimon-deck-builder.png",
       "type": "App"
-    },
-
-    {
-      "name": "Pokedex Application",
-      "technologies": ["Vue.js", "Vuex"],
-      "link": "https://pokedex-xi-weld.vercel.app/",
-      "img": "/pokedex.png",
-      "type": "App"
     }
   ]
 }
