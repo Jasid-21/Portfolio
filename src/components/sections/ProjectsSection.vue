@@ -44,7 +44,7 @@ const upcomming: Project[] = j_projects.developing;
 
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
+      grid-template-rows: 60px auto;
       row-gap: 1rem;
 
       .title {
@@ -56,6 +56,7 @@ const upcomming: Project[] = j_projects.developing;
       .items-container {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
         row-gap: 1rem;
       }

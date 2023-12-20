@@ -20,7 +20,7 @@
       "name": "To do organizer",
       "technologies": ["Vue.js", "Node.js", "SQL"],
       "link": "https://todo-list-api-pi.vercel.app/",
-      "img": "/todo-portfolio.png",
+      "img": "/todo-organizer.png",
       "type": "App"
     },
 
