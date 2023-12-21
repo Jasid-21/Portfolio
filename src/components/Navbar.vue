@@ -1,6 +1,10 @@
 <template>
   <nav class="navbar">
-    <h1 class="logo">Siternet</h1>
+    <RouterLink class="logo-container" to="/">
+      <h1 class="logo">
+        Siternet
+      </h1>
+    </RouterLink>
     <div class="links-container">
       <a class="link-container" v-for="(l, idx) of links" :key="idx"
         :class="{ important: l.accent }" :href="l.url">
@@ -48,6 +52,11 @@ const openDrawer = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .logo-container {
+    color: inherit;
+    text-decoration: none;
+  }
 
   .logo {
     margin: 0;

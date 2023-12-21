@@ -54,10 +54,6 @@ h5 {font-size: 1rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
 
-nav a.router-link-exact-active {
-  color: $accent !important;
-}
-
 .link-item {
   cursor: pointer;
 }
