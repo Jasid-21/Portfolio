@@ -2,7 +2,7 @@
   "items": [
     {
       "name": "Ice cream website",
-      "technologies": ["Vue.js", "Pinia"],
+      "technologies": ["Vue.js", "Pinia", "Typescript"],
       "link": "https://ice-cream-shop-template.vercel.app",
       "img": "/ice-cream-template.png",
       "type": "Website"
@@ -26,7 +26,7 @@
 
     {
       "name": "Fast food website",
-      "technologies": ["Vue.js", "Pinia"],
+      "technologies": ["Vue.js", "Pinia", "Typescript"],
       "link": "https://fast-food-template.vercel.app",
       "img": "/fast-food-template.png",
       "type": "Website"
@@ -34,7 +34,7 @@
 
     {
       "name": "Electronics Shop",
-      "technologies": ["Vue.js", "Tailwind"],
+      "technologies": ["Vue.js", "Tailwind", "Typescript"],
       "link": "https://electronica-e-r.vercel.app",
       "img": "/electronics-shop.png",
       "type": "Website"
@@ -43,7 +43,7 @@
   "developing": [
     {
       "name": "Digimon deck builder",
-      "technologies": ["Angular"],
+      "technologies": ["Angular", "Typescript"],
       "link": "https://digimon-deck-tester.vercel.app/deckBuilder",
       "img": "/digimon-deck-builder.png",
       "type": "App"
