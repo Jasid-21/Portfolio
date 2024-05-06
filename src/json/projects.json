@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "name": "Web Scraper App",
+      "technologies": ["Vue.js", "Typescript", "Pinia", "SCSS", "Node.js"],
+      "link": "https://scrapper-5hc1.onrender.com",
+      "img": "/scraper_app.png",
+      "type": "App"
+    },
+
+    {
       "name": "Ice cream website",
       "technologies": ["Vue.js", "Pinia", "Typescript"],
       "link": "https://ice-cream-shop-template.vercel.app",
