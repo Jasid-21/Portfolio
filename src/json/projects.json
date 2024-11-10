@@ -48,13 +48,5 @@
       "type": "Website"
     }
   ],
-  "developing": [
-    {
-      "name": "Digimon deck builder",
-      "technologies": ["Angular", "Typescript"],
-      "link": "https://digimon-deck-tester.vercel.app/deckBuilder",
-      "img": "/digimon-deck-builder.png",
-      "type": "App"
-    }
-  ]
+  "developing": []
 }
