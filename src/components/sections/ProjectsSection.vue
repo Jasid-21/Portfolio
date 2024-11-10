@@ -1,11 +1,11 @@
 <template>
   <section class="projects-section" id="projects-section">
     <h2 class="section-title">Projects</h2>
-    <dis class="displayer">
+    <dis class="displayer" :class="{ complete: upcomming.length <= 0 }">
       <div class="done-projects">
         <ProjectCard v-for="(p, idx) of projects" :key="idx" :project="p" />
       </div>
-      <div class="upcomming-projects">
+      <div class="upcomming-projects" v-if="upcomming.length > 0">
         <h4 class="title">Work in progress</h4>
         <div class="items-container">
           <ProjectCard v-for="(p, idx) of upcomming" :key="idx" :project="p" />
@@ -29,6 +29,10 @@ const upcomming: Project[] = j_projects.developing;
   .displayer {
     display: grid;
     grid-template-columns: 2fr 1fr;
+
+    &.complete {
+      grid-template-columns: 1fr;
+    }
 
     .done-projects {
       display: flex;
