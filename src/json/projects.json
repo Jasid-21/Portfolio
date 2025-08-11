@@ -1,6 +1,30 @@
 {
   "items": [
     {
+      "name": "Color schemes generator | colorift.com",
+      "technologies": ["Nuxt.js", "Typescript", "Pinia", "SCSS"],
+      "link": "https://www.colorift.com",
+      "img": "/colorift.png",
+      "type": "App"
+    },
+
+    {
+      "name": "Images background remover | removerize.site",
+      "technologies": ["Vue.js", "Typescript", "SCSS"],
+      "link": "https://www.removerize.site",
+      "img": "/removerize.png",
+      "type": "App"
+    },
+
+    {
+      "name": "Tiktok videos downloader | savedtok.site",
+      "technologies": ["Nuxt.js", "Typescript", "SCSS", "Express", "Puppeteer"],
+      "link": "https://www.savedtok.site",
+      "img": "/savedtok.png",
+      "type": "App"
+    },
+
+    {
       "name": "Web Scraper App",
       "technologies": ["Vue.js", "Typescript", "Pinia", "SCSS", "Node.js"],
       "link": "https://scrapper-5hc1.onrender.com",
