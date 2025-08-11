@@ -46,11 +46,22 @@ const goToProject = () => {
     object-fit: cover;
 
     transition: scale 180ms ease;
+    cursor: pointer;
   }
 
   .info-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 50px;
+    padding: 0.5rem;
+
+    background-color: rgba($color: $secondary, $alpha: 0.95);
+
     opacity: 0;
     transition: opacity 180ms ease;
+    cursor: pointer;
   }
 
   &:hover {
@@ -60,14 +71,7 @@ const goToProject = () => {
 
     .info-container {
       opacity: 1;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      min-height: 50px;
-      padding: 0.5rem;
-
-      background-color: rgba($color: $secondary, $alpha: 0.95);
+      
 
       .project-name {
         font-size: 1rem;
@@ -84,12 +88,14 @@ const goToProject = () => {
   }
 
   .badge {
-    font-size: 0.9rem;
+    min-width: 3rem;
+    text-align: center;
+    font-size: 0.75rem;
     font-weight: 700;
     font-style: italic;
-    padding: 0.3rem;
+    padding: 0.3rem 0.5rem;
 
-    border-radius: 6px;
+    border-radius: 0.5rem;
 
     position: absolute;
     top: 10px;
@@ -97,13 +103,17 @@ const goToProject = () => {
   }
 
   .badge.App {
-    background-color: rgb(199, 100, 199);
-    border: 1px solid purple;
+    --base-color: rgb(153, 37, 153);
+    background-color: var(--base-color);
+    border: 1px solid color-mix(in srgb, var(--base-color), #000 40%);
+    color: #fff;
   }
 
   .badge.Website {
-    background-color: rgb(100, 102, 199);
-    border: 1px solid blue;
+    --base-color: rgb(37, 37, 165);
+    background-color: var(--base-color);
+    border: 1px solid color-mix(in srgb, var(--base-color), #000 40%);
+    color: #fff;
   }
 }
 </style>
