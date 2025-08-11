@@ -38,34 +38,48 @@ const goToProject = () => {
   border-radius: 10px;
   overflow: hidden;
 
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 5px $primary;
 
   .project-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    transition: scale 180ms ease;
   }
 
   .info-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-height: 50px;
-    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 180ms ease;
+  }
 
-    background-color: rgba($color: $secondary, $alpha: 0.8);
-
-    .project-name {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
+  &:hover {
+    .project-img {
+      scale: 1.2;
     }
 
-    .technologies {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: rgb(83, 83, 83);
+    .info-container {
+      opacity: 1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      min-height: 50px;
+      padding: 0.5rem;
+
+      background-color: rgba($color: $secondary, $alpha: 0.95);
+
+      .project-name {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .technologies {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgb(83, 83, 83);
+      }
     }
   }
 

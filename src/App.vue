@@ -24,6 +24,7 @@ html, body {
 
 html {
   font-size: 16px;
+  background-color: $background;
 }
 
 body {
