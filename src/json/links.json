@@ -1,13 +1,6 @@
 {
   "links": [
     {
-      "name": "Who am I?",
-      "url": "#top",
-      "accent": false,
-      "icon": "fa-home"
-    },
-
-    {
       "name": "Projects",
       "url": "#projects-section",
       "accent": true,

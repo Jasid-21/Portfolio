@@ -1,7 +1,7 @@
 <template>
   <section class="projects-section" id="projects-section">
     <h2 class="section-title">Projects</h2>
-    <dis class="displayer" :class="{ complete: upcomming.length <= 0 }">
+    <div class="displayer" :class="{ complete: upcomming.length <= 0 }">
       <div class="done-projects">
         <ProjectCard v-for="(p, idx) of projects" :key="idx" :project="p" />
       </div>
@@ -11,7 +11,7 @@
           <ProjectCard v-for="(p, idx) of upcomming" :key="idx" :project="p" />
         </div>
       </div>
-    </dis>
+    </div>
   </section>
 </template>
 

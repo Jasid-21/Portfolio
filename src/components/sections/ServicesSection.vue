@@ -23,5 +23,9 @@ const services: Service[] = j_services.services;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+
+  & > *:not(h2):nth-child(odd) {
+    align-self: flex-end;
+  }
 }
 </style>

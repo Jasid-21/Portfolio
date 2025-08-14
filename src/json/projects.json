@@ -49,14 +49,6 @@
     },
 
     {
-      "name": "To do organizer",
-      "technologies": ["Vue.js", "Vuex", "Node.js", "SQL"],
-      "link": "https://todo-list-api-pi.vercel.app/",
-      "img": "/todo-organizer.png",
-      "type": "App"
-    },
-
-    {
       "name": "Fast food website",
       "technologies": ["Vue.js", "Pinia", "Typescript"],
       "link": "https://fast-food-template.vercel.app",

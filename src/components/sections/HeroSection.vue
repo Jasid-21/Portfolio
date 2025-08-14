@@ -2,13 +2,13 @@
   <section class="hero-section">
     <div class="info-layer">
       <div class="logo-continer">
-        <img src="@/assets/images/bg_less_logo.png" alt="Logo" class="logo">
+        <img src="@/assets/images/hero-logo.svg" alt="Logo" class="logo">
       </div>
       <Transition name="info">
         <div class="info-container" v-if="showInfo">
-          <h2 class="title">Who am I?</h2>
+          <h2 class="title">Turn your website idea into reality</h2>
           <p class="description">
-            Electronics engineer focused in software development with knowledge about multiple technologies that will build what your business needs.
+            Boost your business with an intuitive and customer-friendly website
           </p>
           <a class="projects-link-btn" href="#projects-section">
             <span>Projects</span>
@@ -52,7 +52,7 @@ setTimeout(() => {
     padding: var(--y_pad) var(--x_pad);
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
 
     .logo-continer {
       width: 100%;
@@ -62,18 +62,15 @@ setTimeout(() => {
       align-items: center;
 
       .logo {
-        max-width: 70%;
-        max-height: 80%;
-        border-radius: 50%;
-        background-color: rgba($color: white, $alpha: 0.7);
-        box-shadow: inset 0 0 0 1px #2c0579;
+        width: 17rem;
       }
     }
 
     .info-container {
+      max-width: 35rem;
+      justify-self: flex-end;
       align-self: center;
       color: white;
-      row-gap: 1rem;
       position: static;
 
       display: flex;
@@ -85,13 +82,13 @@ setTimeout(() => {
 
       .projects-link-btn {
         width: 100px;
-        height: 30px;
+        height: 2.5rem;
 
         color: white;
         text-decoration: none;
         background-color: $accent;
         border-radius: 10px;
-        border: 2px solid $d_accent;
+        border: 2px solid $accent;
         transition: all 180ms ease;
 
         display: flex;

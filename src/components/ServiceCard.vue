@@ -27,7 +27,7 @@ const props = defineProps({
 <style scoped lang="scss">
 .service-card {
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   min-height: 220px;
 
   background-color: $primary;
@@ -35,12 +35,10 @@ const props = defineProps({
   color: white;
   overflow: hidden;
 
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0 0 8px black;
 
   display: grid;
-  grid-template-columns: 210px auto;
+  grid-template-columns: 15rem auto;
 
   .image-container {
     position: relative;

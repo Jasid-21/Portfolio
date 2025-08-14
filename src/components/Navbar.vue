@@ -2,6 +2,7 @@
   <nav class="navbar">
     <RouterLink class="logo-container" to="/">
       <h1 class="logo">
+        <img src="../assets/images/logo.png">
         Siternet
       </h1>
     </RouterLink>
@@ -60,8 +61,17 @@ const openDrawer = () => {
 
   .logo {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-style: italic;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
   }
   .links-container {
     display: flex;

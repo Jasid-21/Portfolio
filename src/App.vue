@@ -3,6 +3,8 @@
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Anek%20Kannada:700|Anek%20Kannada:400');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,35 +25,35 @@ html, body {
 }
 
 html {
-  font-size: 16px;
   background-color: $background;
-}
-
-body {
-  font-family: 'Poppins';
-  font-weight: 400;
 }
 
 section, footer {
   padding: 100px var(--x_pad);
 }
 
+body {
+  font-family: 'Anek Kannada';
+  font-weight: 400;
+}
+
 h1, h2, h3, h4, h5 {
-  font-family: 'Poppins';
+  font-family: 'Anek Kannada';
   font-weight: 700;
+  margin: 0;
 }
 
 html {font-size: 100%;} /* 16px */
 
-h1 {font-size: 4rem; /* 67.36px */}
+h1 {font-size: 4.210rem; /* 67.36px */}
 
-h2 {font-size: 3rem; /* 50.56px */}
+h2 {font-size: 3.158rem; /* 50.56px */}
 
-h3 {font-size: 2rem; /* 37.92px */}
+h3 {font-size: 2.369rem; /* 37.92px */}
 
-h4 {font-size: 1.55rem; /* 28.48px */}
+h4 {font-size: 1.777rem; /* 28.48px */}
 
-h5 {font-size: 1rem; /* 21.28px */}
+h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
 

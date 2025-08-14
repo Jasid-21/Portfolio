@@ -6,10 +6,10 @@
         <h3 class="form-title">I'll contact you soon</h3>
 
         <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="Complete name" name="from_name">
+        <input type="text" id="name" placeholder="Jhon Doe" name="from_name" required>
         <br><br>
         <label for="email">Your email</label>
-        <input type="email" id="email" placeholder="someone@example.com" name="from_email">
+        <input type="email" id="email" placeholder="someone@example.com" name="from_email" required>
         <br><br>
         <label for="name">Your whatsapp (optional)</label>
         <input type="text" id="phone" placeholder="+123 345 5678909" name="from_phone">
@@ -36,12 +36,17 @@ const form = ref<HTMLFormElement>();
 
 //* Functions.
 const sendEmail = () => {
+  console.log(process.env.VUE_APP_EMAILJS_ID, process.env.VUE_APP_PUBLIC_KEY);
   if (!form.value) return;
-  emailjs.sendForm('service_yhqcs8h', 'template_37aqibf', form.value, 'mMtSc3MSYDiJ64l2v')
+  emailjs.sendForm(
+    process.env.VUE_APP_EMAILJS_ID,
+    'template_37aqibf', form.value,
+    process.env.VUE_APP_PUBLIC_KEY
+  )
     .then((result) => {
-        alert("Thanks you! <br/> I'll contact you as soon as possible");
+      alert("Thanks you! <br/> I'll contact you as soon as possible");
     }, (error) => {
-        console.log('FAILED...', error.text);
+      console.log('FAILED...', error.text);
     }
   );
 }
@@ -95,11 +100,16 @@ const sendEmail = () => {
         padding-left: 6px;
       }
 
+      input {
+        height: 2.25rem;
+      }
+
       textarea {
         height: 100px;
       }
 
       input[type="submit"] {
+        height: 2.5rem;
         font-weight: 700;
         color: white;
         background-color: $accent;
