@@ -62,28 +62,31 @@ const goToProject = () => {
     opacity: 0;
     transition: opacity 180ms ease;
     cursor: pointer;
+
+    .project-name {
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .technologies {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgb(83, 83, 83);
+    }
   }
 
   &:hover {
+    .info-container {
+      opacity: 1;
+    }
+
     .project-img {
       scale: 1.2;
     }
 
     .info-container {
       opacity: 1;
-      
-
-      .project-name {
-        font-size: 1rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-
-      .technologies {
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: rgb(83, 83, 83);
-      }
     }
   }
 

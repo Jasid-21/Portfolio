@@ -3,36 +3,43 @@
     {
       "name": "Vue.js",
       "svg": "",
-      "icon": "fa-vuejs",
+      "icon": "devicon:vuejs",
       "color": "#3fb27fff"
     },
 
     {
       "name": "Angular",
       "svg": "",
-      "icon": "fa-angular",
+      "icon": "devicon:angularjs",
       "color": "#d6002fff"
     },
 
     {
-      "name": "Node.js",
+      "name": "Nuxt.js",
       "svg": "",
-      "icon": "fa-node-js",
+      "icon": "devicon:nuxt",
+      "color": "#3fb27fff"
+    },
+
+    {
+      "name": "Express.js",
+      "svg": "",
+      "icon": "devicon:express",
       "color": "#88c249ff"
     },
 
     {
-      "name": "Python",
+      "name": "Nest",
       "svg": "",
-      "icon": "fa-python",
-      "color": "#f7d046ff"
+      "icon": "devicon:nestjs",
+      "color": "#DF234F"
     },
 
     {
-      "name": "Java",
+      "name": "Spring boot",
       "svg": "",
-      "icon": "fa-java",
-      "color": "#4f7d9bff"
+      "icon": "devicon:spring",
+      "color": "#77BC1F"
     }
   ]
 }

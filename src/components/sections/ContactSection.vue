@@ -3,21 +3,26 @@
     <h2 class="section-title">Let's talk</h2>
     <div class="contact-methods-container">
       <form class="contact-form" ref="form" @submit.prevent="sendEmail">
-        <h3 class="form-title">I'll contact you soon</h3>
+        <h4 class="form-title">I'll contact you soon</h4>
 
-        <label for="name">Your name</label>
-        <input type="text" id="name" placeholder="Jhon Doe" name="from_name" required>
-        <br><br>
-        <label for="email">Your email</label>
-        <input type="email" id="email" placeholder="someone@example.com" name="from_email" required>
-        <br><br>
-        <label for="name">Your whatsapp (optional)</label>
-        <input type="text" id="phone" placeholder="+123 345 5678909" name="from_phone">
-        <br><br>
-        <label for="message">Your message</label>
-        <textarea id="message" cols="30" rows="10" name="message"
-          placeholder="Type something here (optional)"></textarea>
-        <br><br>
+        <div class="form-key">
+          <label for="name">Your name</label>
+          <input type="text" id="name" class="input-height" placeholder="Jhon Doe" name="from_name" required>
+        </div>
+        <div class="form-key">
+          <label for="email">Your email</label>
+          <input type="email" id="email" class="input-height" placeholder="someone@example.com" name="from_email" required>
+        </div>
+        <div class="form-key">
+          <label for="name">Your whatsapp (optional)</label>
+          <input type="text" id="phone" class="input-height" placeholder="+12 345 5678909" name="from_phone">
+        </div>
+        <div class="form-key">
+          <label for="message">Your message</label>
+          <textarea id="message" cols="30" rows="10" name="message"
+            placeholder="Type something here (optional)">
+          </textarea>
+        </div>
         <input type="submit" value="Send!">
       </form>
       <div class="logo-container">
@@ -76,36 +81,32 @@ const sendEmail = () => {
       font-style: italic;
       color: white;
 
-      border-radius: 10px;
+      border-radius: 0.5rem;
       padding: 1rem;
 
       justify-self: center;
       align-self: center;
 
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
       .form-title {
         text-align: center;
       }
 
-      label {
-        font-weight: 700;
-      }
-
       input, textarea {
         width: 100%;
-        height: 26px;
 
         background-color: white;
         border: 1px solid $accent;
-        border-radius: 6px;
+        border-radius: 0.5rem;
         padding-left: 6px;
-      }
-
-      input {
-        height: 2.25rem;
+        resize: none;
       }
 
       textarea {
-        height: 100px;
+        height: 5rem;
       }
 
       input[type="submit"] {

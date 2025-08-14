@@ -37,7 +37,7 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Anek Kannada';
   font-weight: 700;
   margin: 0;
@@ -55,7 +55,7 @@ h4 {font-size: 1.777rem; /* 28.48px */}
 
 h5 {font-size: 1.333rem; /* 21.28px */}
 
-small {font-size: 0.750rem; /* 12px */}
+h6, small {font-size: 0.750rem; /* 12px */}
 
 .link-item {
   cursor: pointer;
@@ -63,11 +63,26 @@ small {font-size: 0.750rem; /* 12px */}
 
 .section-title {
   text-align: center;
-  margin: 0;
-  margin-bottom: 4rem;
+
+  margin: 0 0 4rem;
+  display: block;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 4rem;
 }
 
 .important {
   color: $accent;
+}
+
+.input-height {
+  height: 2.25rem;
+}
+
+.margin-0 {
+  margin: 0;
 }
 </style>

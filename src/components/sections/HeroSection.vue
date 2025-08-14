@@ -10,8 +10,8 @@
           <p class="description">
             Boost your business with an intuitive and customer-friendly website
           </p>
-          <a class="projects-link-btn" href="#projects-section">
-            <span>Projects</span>
+          <a class="projects-link-btn input-height" href="#contact-section">
+            <span>Contact</span>
           </a>
         </div>
       </Transition>
@@ -82,7 +82,6 @@ setTimeout(() => {
 
       .projects-link-btn {
         width: 100px;
-        height: 2.5rem;
 
         color: white;
         text-decoration: none;
@@ -133,7 +132,7 @@ setTimeout(() => {
   .hero-section {
     .info-layer {
       grid-template-columns: 1fr;
-      grid-template-rows: 200px auto;
+      grid-template-rows: 1fr 1fr;
 
       .logo-continer {
         .logo {

@@ -14,9 +14,9 @@ import {
   faPhp,
   faGolang,
 } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faToolbox, faPhone, faCode, faScrewdriverWrench, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faToolbox, faPhone, faCode, faScrewdriverWrench, faBars, faHandPointer } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faHome, faToolbox, faPhone, faCode, faScrewdriverWrench, faBars);
+library.add(faHome, faToolbox, faPhone, faCode, faScrewdriverWrench, faBars, faHandPointer);
 library.add(faVuejs, faAngular, faNodeJs, faPython, faJava, faPhp, faGolang);
 
 const app = createApp(App);

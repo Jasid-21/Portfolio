@@ -1,16 +1,16 @@
 {
   "links": [
     {
-      "name": "Projects",
-      "url": "#projects-section",
-      "accent": true,
-      "icon": "fa-toolbox"
+      "name": "Benefits",
+      "url": "#benefits-section",
+      "accent": false,
+      "icon": "fa-hand-pointer"
     },
 
     {
       "name": "Services",
       "url": "#services-section",
-      "accent": false,
+      "accent": true,
       "icon": "fa-screwdriver-wrench"
     },
 

@@ -1,45 +1,36 @@
 <template>
   <section class="technologies-section" id="technologies-section">
-    <h2 class="section-title">Technologies</h2>
-    <div class="displayer">
-      <div class="language" v-for="(l, idx) in languages" :key="idx" :style="{ color: l.color }">
-        <span class="language-title">{{ l.name }}</span>
-        <br>
-        <fai class="icon" :icon="'fa-brands ' + l.icon" />
+      <h2 class="section-title">Technologies</h2>
+      <h4 class="section-subtitle"></h4>
+      <div class="languages-container">
+          <div class="language" v-for="(l, idx) in languages.languages" :key="idx"
+              :style="{ color: l.color }">
+              <div class="language-name">{{ l.name }}</div>
+              <Icon :icon="l.icon" :height="96"></Icon>
+          </div>
       </div>
-    </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import j_languages from '@/json/languages.json';
-import Language from '@/types/Language.type';
-
-const languages: Language[] = j_languages.languages;
+import { Icon } from '@iconify/vue';
+import languages from '@/json/languages.json';
 </script>
 
 <style scoped lang="scss">
-.technologies-section {
-  .displayer {
+/* Technologies section */
+section.technologies-section .languages-container {
     display: flex;
-    justify-content: space-around;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
     flex-wrap: wrap;
-    overflow: hidden;
+    flex-shrink: 0;
+    gap: 1rem;
+}
 
-    .language {
-      width: min-content;
-      text-align: center;
-      font-weight: 700;
-
-      .language-title {
-        color: $text;
-      }
-      .icon {
-        font-size: 5rem;
-      }
-    }
-  }
+section.technologies-section .languages-container .language-name {
+    font-size: 1rem;
+    text-align: center;
 }
 </style>

@@ -1,16 +1,17 @@
 <template>
   <section class="services-section" id="services-section">
-    <h2 class="section-title">Services</h2>
-    <ServiceCard v-for="(s, idx) of services" :key="idx" :service="s" />
+    <h2 class="section-title margin-0">Services</h2>
+    <h6 class="section-subtitle">What we offer?</h6>
+
+    <div class="services-container">
+      <ServiceCard v-for="(s, idx) of services.services" :key="idx" :service="s" />
+    </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import ServiceCard from '@/components/ServiceCard.vue';
-import j_services from '@/json/services.json';
-import Service from '@/types/Service.type';
-
-const services: Service[] = j_services.services;
+import services from '@/json/services.json';
 </script>
 
 <style scoped lang="scss">
@@ -20,12 +21,14 @@ const services: Service[] = j_services.services;
   background-size: cover;
   background-repeat: no-repeat;
 
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 
-  & > *:not(h2):nth-child(odd) {
-    align-self: flex-end;
+    & > *:nth-child(even) {
+      align-self: flex-end;
+    }
   }
 }
 </style>

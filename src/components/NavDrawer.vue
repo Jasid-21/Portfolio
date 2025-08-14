@@ -1,7 +1,10 @@
 <template>
   <Transition>
     <div class="drawer" v-if="show" ref="drawer">
-      <h1 class="logo">Siternet</h1>
+      <h1 class="logo">
+        <img src="../assets/images/logo.png">
+        Siternet
+      </h1>
       <br>
       <ul class="links-container">
         <li class="link-container" :class="{ accent: l.accent }"
@@ -50,8 +53,8 @@ const closeAfterClick = () => {
 
   padding: 2rem;
 
-  background-color: $secondary;
-  box-shadow: 2px 0 10px 0 black;
+  background-color: rgba($color: $secondary, $alpha: 0.85);
+  box-shadow: 2px 0 0.25rem 0 black;
 
   z-index: 1001;
 
@@ -61,6 +64,16 @@ const closeAfterClick = () => {
     padding-bottom: 1rem;
     font-size: 3rem;
     font-style: italic;
+    color: $primary;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    img {
+      width: 3.25rem;
+      height: 3.25rem;
+    }
   }
 
   .links-container {
@@ -86,10 +99,7 @@ const closeAfterClick = () => {
 
         display: grid;
         grid-template-columns: 40px auto;
-
-        * {
-          align-self: flex-start;
-        }
+        align-items: center;
 
         .link-name {
           margin-left: 0.5rem;

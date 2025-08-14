@@ -1,27 +1,27 @@
 {
   "services": [
     {
-      "name": "Design process",
+      "name": "Landing Page that sells",
       "imgUrl": "design.jpg",
-      "description": "Service of software design. It depends what you need: User experience, information system, software architecture. Send me a message and we'll talk."
+      "description": "We design an attractive and optimized website so your customers can find you, trust you, and want to contact you."
     },
 
     {
-      "name": "Frontend development",
+      "name": "Interactive web applications",
       "imgUrl": "frontend.jpg",
-      "description": "Development of the software that will face the final user. Do you need a website to show your products? An application that needs to be beautiful and intuitive? Or something like this web to show your services?"
+      "description": "We create easy-to-use online tools so your customers can interact with your business from any device."
     },
 
     {
-      "name": "Fullstack development",
+      "name": "Complete custom platforms",
       "imgUrl": "fullstack.jpg",
-      "description": "Does your application require a more complex information system and will it manage databases and the security of user information? We may be talking about a fullstack application. Go to the Let's Talk section and find out!"
+      "description": "We develop customized solutions that cover everything from the website your customers see to the system that manages your business."
     },
 
     {
-      "name": "Service support",
+      "name": "Support and accompaniment",
       "imgUrl": "customer_service.jpg",
-      "description": "Following successful completion of the service, we can keep in touch to manage any issues that may arise over time and follow up on product performance."
+      "description": "We help you even after the project is delivered, making sure everything works and stays up to date."
     }
   ]
 }

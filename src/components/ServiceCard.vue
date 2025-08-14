@@ -1,27 +1,29 @@
 <template>
-  <div class="service-card">
-    <div class="image-container">
-      <img :src="require('@/assets/images/services/' + service.imgUrl)"
-        :alt="service.name" class="service-img" v-if="service.imgUrl">
-      <div class="info-layer">
-        <h4 class="service-name">{{ service.name }}</h4>
+    <div class="service-card" ref="el">
+      <div class="image-container">
+        <img :src="require('@/assets/images/services/' + service.imgUrl)"
+          :alt="service.name" class="service-img" v-if="service.imgUrl">
+        <div class="info-layer">
+          <h4 class="service-name">{{ service.name }}</h4>
+        </div>
+      </div>
+      <div class="info-container">
+        <p class="description">
+          {{ service.description }}
+        </p>
       </div>
     </div>
-    <div class="info-container">
-      <p class="description">
-        {{ service.description }}
-      </p>
-    </div>
-  </div>
 </template>
 
 <script setup lang="ts">
 import Service from '@/types/Service.type';
-import { PropType } from 'vue';
+import { ref } from 'vue';
 
-const props = defineProps({
-  service: { type: Object as PropType<Service>, required: true },
-});
+const props = defineProps<{
+  service: Service;
+}>();
+
+const el = ref<HTMLDivElement>();
 </script>
 
 <style scoped lang="scss">
@@ -78,6 +80,37 @@ const props = defineProps({
     display: flex;
     align-items: center;
   }
+}
+
+.left-enter-from,
+.left-leave-to {
+  translate: -4rem 0;
+}
+
+.left-enter-to,
+.left-leave-from {
+  translate: 0 0;
+}
+
+.left-enter-active,
+.left-leave-active {
+  position: absolute;
+  transition: translate 0.5s ease;
+}
+
+.right-enter-from,
+.right-leave-to {
+
+}
+
+.right-enter-to,
+.right-leave-from {
+
+}
+
+.right-enter-active,
+.right-leave-active {
+  
 }
 
 @media (max-width: $xsm) {
