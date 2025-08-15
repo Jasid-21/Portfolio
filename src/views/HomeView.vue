@@ -21,7 +21,7 @@ import BenefitsSection from '@/components/sections/BenefitsSection.vue';
 import { useHead } from '@vueuse/head';
 
 useHead({
-  title: 'Professional software and website development | hauntedbyte',
+  title: 'Professional software and website development | HauntedByte',
   meta: [
     {
       name: 'description',
