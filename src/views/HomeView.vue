@@ -20,7 +20,7 @@ import TechnologiesSection from '@/components/sections/TechnologiesSection.vue';
 import FooterSection from '@/components/sections/FooterSection.vue';
 import BenefitsSection from '@/components/sections/BenefitsSection.vue';
 import { useHead } from '@vueuse/head';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/vue"
 
 useHead({
   title: 'Professional software and website development | HauntedByte',
