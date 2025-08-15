@@ -26,7 +26,7 @@
         <input type="submit" value="Send!">
       </form>
       <div class="logo-container">
-        <img src="../../assets/images/bg_less_logo.png" alt="Logo" class="logo">
+        <img src="../../assets/images/bg_less_logo.svg" alt="Logo" class="logo">
       </div>
     </div>
   </section>

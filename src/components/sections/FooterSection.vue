@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <img src="../../assets/images/logo.png" alt="Logo" class="logo">
+    <img src="../../assets/images/logo.svg" alt="Logo" class="logo">
     <ul class="links-container">
       <li v-for="(l, idx) of links" :key="idx">
         <a :href="l.url" class="link">{{ l.name }}</a>

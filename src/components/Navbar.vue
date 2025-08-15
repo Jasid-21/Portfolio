@@ -2,8 +2,8 @@
   <nav class="navbar">
     <RouterLink class="logo-container" to="/">
       <h1 class="logo">
-        <img src="../assets/images/logo.png">
-        Siternet
+        <img src="../assets/images/logo.svg">
+        HauntedByte
       </h1>
     </RouterLink>
     <div class="links-container">

@@ -2,8 +2,8 @@
   <Transition>
     <div class="drawer" v-if="show" ref="drawer">
       <h1 class="logo">
-        <img src="../assets/images/logo.png">
-        Siternet
+        <img src="../assets/images/logo.svg">
+        HauntedByte
       </h1>
       <br>
       <ul class="links-container">

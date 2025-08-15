@@ -21,7 +21,7 @@ import BenefitsSection from '@/components/sections/BenefitsSection.vue';
 import { useHead } from '@vueuse/head';
 
 useHead({
-  title: 'Professional software and website development | Siternet',
+  title: 'Professional software and website development | hauntedbyte',
   meta: [
     {
       name: 'description',
@@ -41,11 +41,11 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://siternet.site'
+      content: 'https://hauntedbyte.site'
     },
     {
       property: 'og:image',
-      content: 'https://www.siternet.site/siternet_preview.png'
+      content: 'https://www.hauntedbyte.site/hauntedbyte_preview.png'
     },
     {
       name: 'twitter:card',
@@ -61,11 +61,11 @@ useHead({
     },
     {
       name: 'twitter:image',
-      content: 'https://www.siternet.site/siternet_preview.png'
+      content: 'https://www.hauntedbyte.site/hauntedbyte_preview.png'
     }
   ],
   link: [
-    { rel: 'canonical', href: 'https://www.siternet.site' }
+    { rel: 'canonical', href: 'https://www.hauntedbyte.site' }
   ]
 });
 </script>

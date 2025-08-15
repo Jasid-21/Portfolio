@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="152.173mm"
+   height="152.173mm"
+   viewBox="0 0 152.173 152.173"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="bg_less_logo.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="254.55844"
+     inkscape:cy="249.60869"
+     inkscape:window-width="1366"
+     inkscape:window-height="692"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="104.58258"
+       y="104.58258"
+       width="183.58591"
+       height="102.28779"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#2c0579;stroke-width:1.95018;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2"
+       width="97.167107"
+       height="97.167107"
+       x="-48.859894"
+       y="59.018333"
+       transform="rotate(-45.147144)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:57.898px;font-family:IPAGothic;-inkscape-font-specification:IPAGothic;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2c0579;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-dasharray:none;stroke-opacity:1"
+       x="19.2437"
+       y="97.139656"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0;fill:#2c0579;fill-opacity:1"
+         x="19.2437"
+         y="97.139656">&lt;HB&gt;</tspan></text>
+  </g>
+</svg>
