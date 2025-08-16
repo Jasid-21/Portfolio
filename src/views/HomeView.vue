@@ -68,6 +68,17 @@ useHead({
   ],
   link: [
     { rel: 'canonical', href: 'https://www.hauntedbyte.site' }
-  ]
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://hauntedbyte.site",
+        "logo": "https://hauntedbyte.site/favicon.png"
+      })
+    }
+  ],
 });
 </script>
