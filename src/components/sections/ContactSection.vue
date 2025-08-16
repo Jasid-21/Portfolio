@@ -41,7 +41,6 @@ const form = ref<HTMLFormElement>();
 
 //* Functions.
 const sendEmail = () => {
-  console.log(process.env.VUE_APP_EMAILJS_ID, process.env.VUE_APP_PUBLIC_KEY);
   if (!form.value) return;
   emailjs.sendForm(
     process.env.VUE_APP_EMAILJS_ID,

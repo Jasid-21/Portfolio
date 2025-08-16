@@ -1,10 +1,13 @@
 <template>
-    <section class="benefits-section" id="benefits-section">
+    <section class="benefits-section" id="benefits-section" ref="context">
         <h2 class="section-title margin-0">Benefits</h2>
-        <h6 class="section-subtitle">Why should you use a website?</h6>
+        <h6 class="section-subtitle">Why should you have a website?</h6>
 
         <div class="benefit-cards-container">
-            <div class="benefit-card" v-for="benefit in benefits.benefits" :key="benefit.name">
+            <div v-for="benefit in benefits" :key="benefit.name"
+                class="benefit-card observable"
+                :class="{ visible: visibleElements.includes(benefit[INTERSECTION_ID]) }"
+                 v-bind:[INTERSECTION_ID]="benefit[INTERSECTION_ID]">
                 <div class="icon-container">
                     <Icon :icon="benefit.icon" :height="48"></Icon>
                 </div>
@@ -13,15 +16,34 @@
                     <div class="benefit-description">{{ benefit.description }}</div>
                 </div>
             </div>
-
-            
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import benefits from '@/json/benefits.json';
+import rawBenefits from '@/json/benefits.json';
+import { INTERSECTION_ID, useIntersectionObserver } from "@/composables/useIntersectionObserver";
+import { getRandomCode } from "@/utils/getRandomCode";
+import { nextTick, onMounted, ref } from "vue";
+
+const benefits = rawBenefits.benefits.map(b => {
+    const o = Object.create(b) as typeof b & { [INTERSECTION_ID]: string };
+    Object.defineProperty(o, INTERSECTION_ID, {
+        value: getRandomCode(),
+        writable: true,
+        configurable: true,
+        enumerable: true,
+    });
+
+    return o;
+});
+
+const { context, observeElements, visibleElements } = useIntersectionObserver();
+
+onMounted(() => {
+    nextTick(() => observeElements(context.value?.querySelectorAll('.observable')));
+});
 </script>
 
 <style lang="scss" scoped>
@@ -31,6 +53,8 @@ section.benefits-section {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    overflow: hidden;
 }
 
 section.benefits-section .benefit-cards-container {
@@ -43,6 +67,14 @@ section.benefits-section .benefit-cards-container {
 section.benefits-section .benefit-cards-container .benefit-card {
     max-width: 40rem;
 
+    position: relative;
+    translate: -30% 0;
+    opacity: 0;
+
+    transition-property: translate, opacity;
+    transition-duration: 800ms;
+    transition-timing-function: ease;
+
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -50,6 +82,7 @@ section.benefits-section .benefit-cards-container .benefit-card {
 }
 
 section.benefits-section .benefit-cards-container .benefit-card:nth-child(even) {
+    translate: 30% 0;
     direction: rtl;
     align-self: flex-end;
 }
@@ -57,6 +90,11 @@ section.benefits-section .benefit-cards-container .benefit-card:nth-child(even) 
 section.benefits-section .benefit-cards-container .benefit-card:nth-child(even) .benefit-description,
 section.benefits-section .benefit-cards-container .benefit-card:nth-child(even) .benefit-name {
     direction: ltr;
+}
+
+section.benefits-section .benefit-cards-container .benefit-card.visible {
+    translate: 0 0;
+    opacity: 1;
 }
 
 section.benefits-section .benefit-cards-container .benefit-card .benefit-name {

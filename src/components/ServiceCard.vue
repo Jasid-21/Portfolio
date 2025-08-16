@@ -1,5 +1,5 @@
 <template>
-    <div class="service-card" ref="el">
+    <div class="service-card observable" :class="{ visible }" v-bind:[INTERSECTION_ID]="intersectionId">
       <div class="image-container">
         <img :src="require('@/assets/images/services/' + service.imgUrl)"
           :alt="service.name" class="service-img" v-if="service.imgUrl">
@@ -16,14 +16,14 @@
 </template>
 
 <script setup lang="ts">
+import { INTERSECTION_ID } from '@/composables/useIntersectionObserver';
 import Service from '@/types/Service.type';
-import { ref } from 'vue';
 
 const props = defineProps<{
   service: Service;
+  visible?: boolean;
+  intersectionId?: string;
 }>();
-
-const el = ref<HTMLDivElement>();
 </script>
 
 <style scoped lang="scss">

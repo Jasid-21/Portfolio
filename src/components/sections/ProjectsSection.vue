@@ -20,8 +20,6 @@ import j_projects from '@/json/projects.json';
 import Project from '@/types/Project.type';
 import ProjectCard from '../ProjectCard.vue';
 
-console.log("Mensaje sin importancia");
-
 const projects: Project[] = j_projects.items;
 const upcomming: Project[] = j_projects.developing;
 </script>
