@@ -66,6 +66,22 @@ export const i18n = createI18n({
                     name: "Soporte y acompañamiento",
                     description: "Te ayudamos incluso después de entregar el proyecto, asegurándonos de que todo funcione y se mantenga actualizado."
                 }
+            },
+
+            seo: {
+                title: 'Desarrollo de software y sitios web profesionales | HauntedByte',
+                meta: {
+                    description: 'Creamos sitios web personalizados, apps, y soluciones digitales para hacer crecer tu negocio. Software atractivo, rápido y acorde a tus necesidades',
+                    og: {
+                        title: 'Soluciones digitales y desarrollo de software acorde a tus necesidades',
+                        description: 'Desde sitios web hasta plataformas completas, te ayudamos a digitalizar tu negocio con tecnologías modernas y soporte personalizado',
+                    },
+                    twiter: {
+                        title: 'Desarrollo de software y sitios web profesionales',
+                        description: 'Creamos soluciones digitales y personalizadas para hacer destacar tu negocio.',
+                        
+                    }
+                }
             }
         },
 
@@ -130,6 +146,22 @@ export const i18n = createI18n({
                 support: {
                     name: "Support and accompaniment",
                     description: "We help you even after the project is delivered, making sure everything works and stays up to date."
+                }
+            },
+
+            seo: {
+                title: 'Professional software and website development | HauntedByte',
+                meta: {
+                    description: 'We create custom websites, apps, and digital solutions to grow your business. Attractive, fast, and tailored to your needs.',
+                    og: {
+                        title: 'Digital solutions and software development tailored to your needs.',
+                        description: 'From websites to complete platforms, we help you digitize your business with modern technology and dedicated support.',
+                    },
+                    twiter: {
+                        title: 'Professional software and website development',
+                        description: 'We create customized digital solutions to make your business stand out.',
+
+                    }
                 }
             }
         }

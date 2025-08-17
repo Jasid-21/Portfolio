@@ -21,21 +21,23 @@ import FooterSection from '@/components/sections/FooterSection.vue';
 import BenefitsSection from '@/components/sections/BenefitsSection.vue';
 import { useHead } from '@vueuse/head';
 import { Analytics } from "@vercel/analytics/vue"
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 useHead({
-  title: 'Professional software and website development | HauntedByte',
+  title: t('seo.title'),
   meta: [
     {
       name: 'description',
-      content: 'We create custom websites, apps, and digital solutions to grow your business. Attractive, fast, and tailored to your needs.'
+      content: t('seo.meta.description'),
     },
     {
       property: 'og:title',
-      content: 'Digital solutions and software development tailored to your needs.'
+      content: t('seo.meta.og.title'),
     },
     {
       property: 'og:description',
-      content: 'From websites to complete platforms, we help you digitize your business with modern technology and dedicated support.'
+      content: t('seo.meta.og.description'),
     },
     {
       property: 'og:type',
@@ -55,11 +57,11 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: 'Professional software and website development'
+      content: t('seo.meta.twitter.title'),
     },
     {
       name: 'twitter:description',
-      content: 'We create customized digital solutions to make your business stand out.'
+      content: t('seo.meta.twitter.description'),
     },
     {
       name: 'twitter:image',
