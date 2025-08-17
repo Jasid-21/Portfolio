@@ -1,10 +1,10 @@
 <template>
     <section class="benefits-section" id="benefits-section" ref="context">
-        <h2 class="section-title margin-0">Benefits</h2>
-        <h6 class="section-subtitle">Why should you have a website?</h6>
+        <h2 class="section-title margin-0">{{ t('benefits') }}</h2>
+        <h6 class="section-subtitle">{{ t('wyhShouldHaveWebsite') }}</h6>
 
         <div class="benefit-cards-container">
-            <div v-for="benefit in benefits" :key="benefit.name"
+            <div v-for="benefit in benefits" :key="t(`benefitsJson.${ benefit.key }.name`)"
                 class="benefit-card observable"
                 :class="{ visible: visibleElements.includes(benefit[INTERSECTION_ID]) }"
                  v-bind:[INTERSECTION_ID]="benefit[INTERSECTION_ID]">
@@ -12,8 +12,8 @@
                     <Icon :icon="benefit.icon" :height="48"></Icon>
                 </div>
                 <div class="info-container">
-                    <div class="benefit-name">{{ benefit.name }}</div>
-                    <div class="benefit-description">{{ benefit.description }}</div>
+                    <div class="benefit-name">{{ t(`benefitsJson.${ benefit.key }.name`) }}</div>
+                    <div class="benefit-description">{{ t(`benefitsJson.${ benefit.key }.description`) }}</div>
                 </div>
             </div>
         </div>
@@ -26,7 +26,9 @@ import rawBenefits from '@/json/benefits.json';
 import { INTERSECTION_ID, useIntersectionObserver } from "@/composables/useIntersectionObserver";
 import { getRandomCode } from "@/utils/getRandomCode";
 import { nextTick, onMounted, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
+const { t } = useI18n();
 const benefits = rawBenefits.benefits.map(b => {
     const o = Object.create(b) as typeof b & { [INTERSECTION_ID]: string };
     Object.defineProperty(o, INTERSECTION_ID, {

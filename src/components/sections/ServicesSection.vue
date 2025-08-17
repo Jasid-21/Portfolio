@@ -1,7 +1,7 @@
 <template>
   <section class="services-section" id="services-section" ref="context">
-    <h2 class="section-title margin-0">Services</h2>
-    <h6 class="section-subtitle">What we offer?</h6>
+    <h2 class="section-title margin-0">{{ t('services') }}</h2>
+    <h6 class="section-subtitle">{{ t('whatWeOffer') }}</h6>
 
     <div class="services-container">
       <ServiceCard v-for="(s, idx) of services" :key="idx" :service="s"
@@ -17,6 +17,9 @@ import { INTERSECTION_ID, useIntersectionObserver } from '@/composables/useInter
 import rawServices from '@/json/services.json';
 import { getRandomCode } from '@/utils/getRandomCode';
 import { nextTick, onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const services = rawServices.services.map(b => {
     const o = Object.create(b) as typeof b & { [INTERSECTION_ID]: string };

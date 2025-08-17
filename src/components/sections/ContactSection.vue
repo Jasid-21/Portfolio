@@ -1,26 +1,26 @@
 <template>
   <section class="contact-section" id="contact-section">
-    <h2 class="section-title">Let's talk</h2>
+    <h2 class="section-title">{{ t('letsTalk') }}</h2>
     <div class="contact-methods-container">
       <form class="contact-form" ref="form" @submit.prevent="sendEmail">
-        <h4 class="form-title">I'll contact you soon</h4>
+        <h4 class="form-title">{{ t('illContactYouSoon') }}</h4>
 
         <div class="form-key">
-          <label for="name">Your name</label>
+          <label for="name">{{ t('yourName') }}</label>
           <input type="text" id="name" class="input-height" placeholder="Jhon Doe" name="from_name" required>
         </div>
         <div class="form-key">
-          <label for="email">Your email</label>
+          <label for="email">{{ t('yourEmail') }}</label>
           <input type="email" id="email" class="input-height" placeholder="someone@example.com" name="from_email" required>
         </div>
         <div class="form-key">
-          <label for="name">Your whatsapp (optional)</label>
+          <label for="name">{{ `${ t('yourWhatsapp') } (${ t('optional') })` }}</label>
           <input type="text" id="phone" class="input-height" placeholder="+12 345 5678909" name="from_phone">
         </div>
         <div class="form-key">
-          <label for="message">Your message</label>
+          <label for="message">{{ `${ t('yourMessage') } (${ t('optional') })` }}</label>
           <textarea id="message" cols="30" rows="10" name="message"
-            placeholder="Type something here (optional)">
+            :placeholder="t('typeSomethingHere')">
           </textarea>
         </div>
         <input type="submit" value="Send!">
@@ -35,11 +35,11 @@
 <script setup lang="ts">
 import emailjs from '@emailjs/browser';
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-//* Defined.
+const { t } = useI18n();
+
 const form = ref<HTMLFormElement>();
-
-//* Functions.
 const sendEmail = () => {
   if (!form.value) return;
   emailjs.sendForm(
@@ -48,7 +48,7 @@ const sendEmail = () => {
     process.env.VUE_APP_PUBLIC_KEY
   )
     .then((result) => {
-      alert("Thanks you! <br/> I'll contact you as soon as possible");
+      alert(`${ t('thankyou') } <br/> ${ t('illContactAsSoonAsPossible') }`);
     }, (error) => {
       console.log('FAILED...', error.text);
     }

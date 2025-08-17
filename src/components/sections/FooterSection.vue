@@ -3,7 +3,7 @@
     <img src="../../assets/images/logo.svg" alt="Logo" class="logo">
     <ul class="links-container">
       <li v-for="(l, idx) of links" :key="idx">
-        <a :href="l.url" class="link">{{ l.name }}</a>
+        <a :href="l.url" class="link">{{ t(l.name) }}</a>
       </li>
     </ul>
   </footer>
@@ -12,7 +12,9 @@
 <script setup lang="ts">
 import j_links from '@/json/links.json';
 import Link from '@/types/Link.type';
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 const links: Link[] = j_links.links;
 </script>
 

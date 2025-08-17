@@ -11,7 +11,7 @@
           v-for="(l, idx) of links" :key="idx">
           <a :href="l.url" @click="closeAfterClick">
             <fai class="icon" :icon="'fa-solid ' + l.icon" />
-            <span class="link-name">{{ l.name }}</span>
+            <span class="link-name">{{ t(l.name) }}</span>
           </a>
         </li>
       </ul>
@@ -24,8 +24,9 @@ import Link from '@/types/Link.type';
 import { PropType, onMounted } from 'vue';
 import { onClickOutside } from '@vueuse/core';
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
-//* Defined.
+const { t } = useI18n();
 const emit = defineEmits(['closeDrawer']);
 const props = defineProps({
   links: { type: Array as PropType<Link[]>, required: true, },

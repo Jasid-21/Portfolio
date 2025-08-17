@@ -1,27 +1,24 @@
 {
   "services": [
     {
-      "name": "Landing Page that sells",
+      "name": "servicesJson.landing.name",
       "imgUrl": "design.jpg",
-      "description": "We design an attractive and optimized website so your customers can find you, trust you, and want to contact you."
+      "description": "servicesJson.landing.description"
     },
-
     {
-      "name": "Interactive web applications",
+      "name": "servicesJson.interactive.name",
       "imgUrl": "frontend.jpg",
-      "description": "We create easy-to-use online tools so your customers can interact with your business from any device."
+      "description": "servicesJson.interactive.description"
     },
-
     {
-      "name": "Complete custom platforms",
+      "name": "servicesJson.platforms.name",
       "imgUrl": "fullstack.jpg",
-      "description": "We develop customized solutions that cover everything from the website your customers see to the system that manages your business."
+      "description": "servicesJson.platforms.description"
     },
-
     {
-      "name": "Support and accompaniment",
+      "name": "servicesJson.support.name",
       "imgUrl": "customer_service.jpg",
-      "description": "We help you even after the project is delivered, making sure everything works and stays up to date."
+      "description": "servicesJson.support.description"
     }
   ]
 }

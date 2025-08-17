@@ -2,14 +2,14 @@
     <div class="service-card observable" :class="{ visible }" v-bind:[INTERSECTION_ID]="intersectionId">
       <div class="image-container">
         <img :src="require('@/assets/images/services/' + service.imgUrl)"
-          :alt="service.name" class="service-img" v-if="service.imgUrl">
+          :alt="t(service.name)" class="service-img" v-if="service.imgUrl">
         <div class="info-layer">
-          <h4 class="service-name">{{ service.name }}</h4>
+          <h4 class="service-name">{{ t(service.name) }}</h4>
         </div>
       </div>
       <div class="info-container">
         <p class="description">
-          {{ service.description }}
+          {{ t(service.description) }}
         </p>
       </div>
     </div>
@@ -18,7 +18,9 @@
 <script setup lang="ts">
 import { INTERSECTION_ID } from '@/composables/useIntersectionObserver';
 import Service from '@/types/Service.type';
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 const props = defineProps<{
   service: Service;
   visible?: boolean;
@@ -68,6 +70,7 @@ const props = defineProps<{
       align-items: center;
 
       .service-name {
+        font-size: 1.5rem;
         margin: 0;
         text-align: center;
       }

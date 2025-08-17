@@ -2,6 +2,17 @@
   <router-view/>
 </template>
 
+<script lang="ts" setup>
+import { onMounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+onMounted(() => {
+  const language = navigator.language.split('-')[0];
+  locale.value = ['es', 'en'].includes(language) ? language : 'en';
+});
+</script>
+
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Anek%20Kannada:700|Anek%20Kannada:400');
 

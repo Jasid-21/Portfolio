@@ -2,38 +2,27 @@
     "benefits": [
         {
             "icon": "lucide:clock-9",
-            "name": "24 hours leading",
-            "description": "Your business will continue generating interest in people 24 hours a day."
+            "key": "leading"
         },
-
         {
             "icon": "lucide:users",
-            "name": "Reach of people",
-            "description": "Anyone with internet can find you, no matter where they are."
+            "key": "reach"
         },
-
         {
             "icon": "lucide:heart-handshake",
-            "name": "Generate trust",
-            "description": "A professional site gives security and credibility to your clients."
+            "key": "trust"
         },
-
         {
             "icon": "lucide:sparkles",
-            "name": "You show the best of your business",
-            "description": "It's your online showcase for showcasing your products, services, and history."
+            "key": "showcase"
         },
-
         {
             "icon": "lucide:phone",
-            "name": "Easy contact",
-            "description": "Forms, WhatsApp, social media… all in one place."
+            "key": "contact"
         },
-
         {
             "icon": "lucide:medal",
-            "name": "You stand out from the competition",
-            "description": "If your competition already has a website, you'll catch up. If they don't, you'll take the lead."
+            "key": "competition"
         }
     ]
 }

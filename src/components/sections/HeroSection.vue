@@ -6,12 +6,12 @@
       </div>
       <Transition name="info">
         <div class="info-container" v-if="showInfo">
-          <h2 class="title">Turn your website idea into reality</h2>
+          <h2 class="title">{{ t('turnWebsiteIntoReality') }}</h2>
           <p class="description">
-            Boost your business with an intuitive and customer-friendly website
+            {{ t('boostYourBussinessSlogan') }}
           </p>
           <a class="projects-link-btn input-height" href="#contact-section">
-            <span>Contact</span>
+            <span>{{ t('contact') }}</span>
           </a>
         </div>
       </Transition>
@@ -21,6 +21,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 //* Variables.
 const showInfo = ref<boolean>(false);

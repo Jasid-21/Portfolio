@@ -10,7 +10,7 @@
       <a class="link-container" v-for="(l, idx) of links" :key="idx"
         :class="{ important: l.accent }" :href="l.url">
         <fai class="icon" :icon="'fa-solid ' + l.icon" />
-        <span class="link-name">{{ l.name }}</span>
+        <span class="link-name">{{ t(l.name) }}</span>
       </a>
     </div>
     <div class="bars-button-container" @click="openDrawer">
@@ -26,12 +26,12 @@ import { ref } from 'vue';
 import NavDrawer from '@/components/NavDrawer.vue';
 import j_links from '@/json/links.json';
 import Link from '@/types/Link.type';
+import { useI18n } from 'vue-i18n';
 
-//* Variables.
+const { t } = useI18n();
 const links: Link[] = j_links.links;
-const showDrawer = ref<boolean>(false);
 
-//* Functions.
+const showDrawer = ref<boolean>(false);
 const openDrawer = () => {
   showDrawer.value = true;
 }

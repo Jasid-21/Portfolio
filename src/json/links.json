@@ -1,28 +1,28 @@
 {
   "links": [
     {
-      "name": "Benefits",
+      "name": "benefits",
       "url": "#benefits-section",
       "accent": false,
       "icon": "fa-hand-pointer"
     },
 
     {
-      "name": "Services",
+      "name": "services",
       "url": "#services-section",
       "accent": true,
       "icon": "fa-screwdriver-wrench"
     },
 
     {
-      "name": "Technologies",
+      "name": "technologies",
       "url": "#technologies-section",
       "accent": false,
       "icon": "fa-code"
     },
 
     {
-      "name": "Contact",
+      "name": "contact",
       "url": "#contact-section",
       "accent": false,
       "icon": "fa-phone"
