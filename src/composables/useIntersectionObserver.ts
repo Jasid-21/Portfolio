@@ -8,6 +8,8 @@ const observer = new IntersectionObserver((entries) => {
         if (! intId) return;
         if (e.isIntersecting) {
             visibleElements.value.push(intId);
+
+            observer.unobserve(e.target);
             return;
         }
 
