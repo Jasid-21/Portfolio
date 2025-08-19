@@ -1,8 +1,8 @@
 <template>
   <footer>
-    <img src="../../assets/images/logo.svg" alt="Logo" class="logo">
+    <img src="../../assets/images/logo.png" alt="Logo" class="logo">
     <ul class="links-container">
-      <li v-for="(l, idx) of links" :key="idx">
+      <li v-for="(l, idx) of links.links" :key="idx">
         <a :href="l.url" class="link">{{ t(l.name) }}</a>
       </li>
     </ul>
@@ -10,12 +10,10 @@
 </template>
 
 <script setup lang="ts">
-import j_links from '@/json/links.json';
-import Link from '@/types/Link.type';
+import links from '@/json/links.json';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
-const links: Link[] = j_links.links;
 </script>
 
 <style scoped lang="scss">

@@ -19,8 +19,7 @@
         </div>
         <div class="form-key">
           <label for="message">{{ `${ t('yourMessage') } (${ t('optional') })` }}</label>
-          <textarea id="message" cols="30" rows="10" name="message"
-            :placeholder="t('typeSomethingHere')">
+          <textarea id="message" name="message" :placeholder="t('typeSomethingHere')">
           </textarea>
         </div>
         <input type="submit" value="Send!">

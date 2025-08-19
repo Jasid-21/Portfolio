@@ -13,15 +13,16 @@
 
 <script lang="ts" setup>
 import Navbar from '@/components/Navbar.vue';
-import ContactSection from '@/components/sections/ContactSection.vue';
-import HeroSection from '@/components/sections/HeroSection.vue';
-import ServicesSection from '@/components/sections/ServicesSection.vue';
-import TechnologiesSection from '@/components/sections/TechnologiesSection.vue';
-import FooterSection from '@/components/sections/FooterSection.vue';
-import BenefitsSection from '@/components/sections/BenefitsSection.vue';
+import ContactSection from '@/components/homeSections/ContactSection.vue';
+import HeroSection from '@/components/homeSections/HeroSection.vue';
+import ServicesSection from '@/components/homeSections/ServicesSection.vue';
+import TechnologiesSection from '@/components/homeSections/TechnologiesSection.vue';
+import FooterSection from '@/components/homeSections/FooterSection.vue';
+import BenefitsSection from '@/components/homeSections/BenefitsSection.vue';
 import { useHead } from '@vueuse/head';
 import { Analytics } from "@vercel/analytics/vue"
 import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 const { t } = useI18n();
 useHead({
@@ -29,15 +30,15 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: t('seo.meta.description'),
+      content: computed(() => t('seo.meta.description')),
     },
     {
       property: 'og:title',
-      content: t('seo.meta.og.title'),
+      content: computed(() => t('seo.meta.og.title')),
     },
     {
       property: 'og:description',
-      content: t('seo.meta.og.description'),
+      content: computed(() => t('seo.meta.og.description')),
     },
     {
       property: 'og:type',
@@ -57,11 +58,11 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: t('seo.meta.twitter.title'),
+      content: computed(() => t('seo.meta.twitter.title')),
     },
     {
       name: 'twitter:description',
-      content: t('seo.meta.twitter.description'),
+      content: computed(() => t('seo.meta.twitter.description')),
     },
     {
       name: 'twitter:image',

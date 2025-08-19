@@ -13,12 +13,13 @@ import {
   faJava,
   faPhp,
   faGolang,
+  faHtml5,
 } from '@fortawesome/free-brands-svg-icons';
 import { faHome, faToolbox, faPhone, faCode, faScrewdriverWrench, faBars, faHandPointer } from '@fortawesome/free-solid-svg-icons';
 import { i18n } from './i18n/i18n';
 
 library.add(faHome, faToolbox, faPhone, faCode, faScrewdriverWrench, faBars, faHandPointer);
-library.add(faVuejs, faAngular, faNodeJs, faPython, faJava, faPhp, faGolang);
+library.add(faVuejs, faAngular, faNodeJs, faPython, faJava, faPhp, faGolang, faHtml5);
 
 // Createion.
 const app = createApp(App);

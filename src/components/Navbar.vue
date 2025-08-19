@@ -1,15 +1,19 @@
 <template>
   <nav class="navbar">
     <RouterLink class="logo-container" to="/">
-      <h1 class="logo">
-        <img src="../assets/images/logo.svg">
-        HauntedByte
-      </h1>
+      <Transition name="fade">
+        <h1 class="logo" v-if="!showDrawer">
+          <img src="../assets/images/logo.png">
+          HauntedByte
+        </h1>
+
+        <div v-else></div>
+      </Transition>
     </RouterLink>
     <div class="links-container">
-      <a class="link-container" v-for="(l, idx) of links" :key="idx"
+      <a class="link-container" v-for="(l, idx) of links.links" :key="idx"
         :class="{ important: l.accent }" :href="l.url">
-        <fai class="icon" :icon="'fa-solid ' + l.icon" />
+        <fai class="icon" :icon="`fa-${ l.collection || 'solid' } ${ l.icon }`" />
         <span class="link-name">{{ t(l.name) }}</span>
       </a>
     </div>
@@ -18,23 +22,21 @@
     </div>
   </nav>
 
-  <NavDrawer :links="links" :show="showDrawer" @close-drawer="() => showDrawer = false" />
+  <NavDrawer :links="links.links" :show="showDrawer" @close-drawer="closeDrawer" />
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 import NavDrawer from '@/components/NavDrawer.vue';
-import j_links from '@/json/links.json';
-import Link from '@/types/Link.type';
+import links from '@/json/links.json';
 import { useI18n } from 'vue-i18n';
+import { RouterLink } from 'vue-router';
 
 const { t } = useI18n();
-const links: Link[] = j_links.links;
 
 const showDrawer = ref<boolean>(false);
-const openDrawer = () => {
-  showDrawer.value = true;
-}
+const openDrawer = () => showDrawer.value = true;
+const closeDrawer = () => showDrawer.value = false;
 </script>
 
 <style scoped lang="scss">
@@ -61,12 +63,11 @@ const openDrawer = () => {
 
   .logo {
     margin: 0;
-    font-size: 2.75rem;
-    font-style: italic;
+    font-size: 2.25rem;
 
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 
     img {
       width: 3.5rem;

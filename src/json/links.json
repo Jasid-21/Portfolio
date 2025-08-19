@@ -10,7 +10,7 @@
     {
       "name": "services",
       "url": "#services-section",
-      "accent": true,
+      "accent": false,
       "icon": "fa-screwdriver-wrench"
     },
 

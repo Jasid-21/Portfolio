@@ -15,7 +15,7 @@ const observer = new IntersectionObserver((entries) => {
 
         visibleElements.value = visibleElements.value.filter(v => v != intId);
     })
-}, { threshold: 0.6 });
+}, { threshold: 0.2 });
 
 export function useIntersectionObserver() {
     const context = ref<HTMLElement>();

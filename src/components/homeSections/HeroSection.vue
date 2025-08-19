@@ -35,7 +35,7 @@ setTimeout(() => {
 
 <style scoped lang="scss">
 .hero-section {
-  height: 100vh;
+  min-height: 100vh;
 
   background: url('../../assets/images/hero.jpg');
   background-position: center;
@@ -135,17 +135,10 @@ setTimeout(() => {
   .hero-section {
     .info-layer {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-
-      .logo-continer {
-        .logo {
-          align-self: flex-end;
-        }
-      }
+      grid-template-rows: auto 1fr;
 
       .info-container {
         width: 80%;
-        justify-self: center;
       }
     }
   }

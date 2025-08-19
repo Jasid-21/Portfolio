@@ -1,0 +1,81 @@
+export const en = {
+    services: 'Services',
+    templates: 'Templates',
+    whatWeOffer: 'What we offer?',
+    turnWebsiteIntoReality: 'Turn your website idea into reality',
+    boostYourBussinessSlogan: 'Boost your business with an intuitive and customer-friendly website',
+    contact: 'Contact',
+    benefits: 'Benefits',
+    wyhShouldHaveWebsite: 'Why should you have a website?',
+    technologies: 'Technologies',
+    letsTalk: "Let's talk",
+    illContactYouSoon: "I'll contact you soon",
+    yourName: 'Your name',
+    yourEmail: 'Your email',
+    yourWhatsapp: 'Your whatsapp',
+    optional: 'optional',
+    yourMessage: 'Your message',
+    typeSomethingHere: 'Type something here',
+    thankyou: 'Thank you!',
+    illContactAsSoonAsPossible: "I'll contact you as soon as possible",
+    benefitsJson: {
+        leading: {
+            name: "24 hours leading",
+            description: "Your business will continue generating interest in people 24 hours a day."
+        },
+        reach: {
+            name: "Reach of people",
+            description: "Anyone with internet can find you, no matter where they are."
+        },
+        trust: {
+            name: "Generate trust",
+            description: "A professional site gives security and credibility to your clients."
+        },
+        showcase: {
+            name: "You show the best of your business",
+            description: "It's your online showcase for showcasing your products, services, and history."
+        },
+        contact: {
+            name: "Easy contact",
+            description: "Forms, WhatsApp, social media… all in one place."
+        },
+        competition: {
+            name: "You stand out from the competition",
+            description: "If your competition already has a website, you'll catch up. If they don't, you'll take the lead."
+        }
+    },
+    servicesJson: {
+        landing: {
+            name: "Landing Page that sells",
+            description: "We design an attractive and optimized website so your customers can find you, trust you, and want to contact you."
+        },
+        interactive: {
+            name: "Interactive web applications",
+            description: "We create easy-to-use online tools so your customers can interact with your business from any device."
+        },
+        platforms: {
+            name: "Complete custom platforms",
+            description: "We develop customized solutions that cover everything from the website your customers see to the system that manages your business."
+        },
+        support: {
+            name: "Support and accompaniment",
+            description: "We help you even after the project is delivered, making sure everything works and stays up to date."
+        }
+    },
+
+    seo: {
+        title: 'Professional software and website development | HauntedByte',
+        meta: {
+            description: 'We create custom websites, apps, and digital solutions to grow your business. Attractive, fast, and tailored to your needs.',
+            og: {
+                title: 'Digital solutions and software development tailored to your needs.',
+                description: 'From websites to complete platforms, we help you digitize your business with modern technology and dedicated support.',
+            },
+            twiter: {
+                title: 'Professional software and website development',
+                description: 'We create customized digital solutions to make your business stand out.',
+
+            }
+        }
+    }
+}

@@ -2,15 +2,15 @@
   <Transition>
     <div class="drawer" v-if="show" ref="drawer">
       <h1 class="logo">
-        <img src="../assets/images/logo.svg">
+        <img src="../assets/images/logo.png">
         HauntedByte
       </h1>
       <br>
       <ul class="links-container">
-        <li class="link-container" :class="{ accent: l.accent }"
-          v-for="(l, idx) of links" :key="idx">
-          <a :href="l.url" @click="closeAfterClick">
-            <fai class="icon" :icon="'fa-solid ' + l.icon" />
+        <li class="link-container"
+          v-for="(l, idx) of links.links" :key="idx">
+          <a :href="l.url" @click="closeDrawer" :class="{ accent: l.accent }">
+            <fai class="icon" :icon="`fa-${ l.collection || 'solid' } ${ l.icon }`" />
             <span class="link-name">{{ t(l.name) }}</span>
           </a>
         </li>
@@ -20,8 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import Link from '@/types/Link.type';
-import { PropType, onMounted } from 'vue';
+import links from '@/json/links.json';
 import { onClickOutside } from '@vueuse/core';
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
@@ -29,19 +28,13 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 const emit = defineEmits(['closeDrawer']);
 const props = defineProps({
-  links: { type: Array as PropType<Link[]>, required: true, },
   show: { type: Boolean, required: true },
 });
 const drawer = ref<HTMLElement>();
+const closeDrawer = () => emit('closeDrawer');
 
 //* Functions.
-onClickOutside(drawer, () => {
-  emit('closeDrawer');
-});
-
-const closeAfterClick = () => {
-  emit('closeDrawer');
-}
+onClickOutside(drawer, closeDrawer);
 </script>
 
 <style scoped lang="scss">
@@ -54,7 +47,7 @@ const closeAfterClick = () => {
 
   padding: 2rem;
 
-  background-color: rgba($color: $secondary, $alpha: 0.85);
+  background-color: rgba($color: $secondary, $alpha: 0.9);
   box-shadow: 2px 0 0.25rem 0 black;
 
   z-index: 1001;
@@ -63,7 +56,7 @@ const closeAfterClick = () => {
     border-bottom: 1px solid $primary;
     margin: 0;
     padding-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-style: italic;
     color: $primary;
 
@@ -95,8 +88,10 @@ const closeAfterClick = () => {
       transition: all 180ms ease;
 
       a {
+        width: fit-content;
         color: inherit;
         text-decoration: none;
+        position: relative;
 
         display: grid;
         grid-template-columns: 40px auto;
@@ -105,24 +100,24 @@ const closeAfterClick = () => {
         .link-name {
           margin-left: 0.5rem;
         }
+
+        &.accent::after {
+          $size: 8px;
+          position: absolute;
+          content: '';
+          width: $size;
+          height: $size;
+          background-color: purple;
+          border-radius: 50%;
+          top: 0.25rem;
+          right: calc(($size + 0.75rem) * (-1));
+        }
       }
 
       &:hover {
         background-color: $primary;
         color: white;
       }
-    }
-
-    .link-container.accent::after {
-      $size: 8px;
-      position: absolute;
-      content: '';
-      width: $size;
-      height: $size;
-      background-color: purple;
-      border-radius: 50%;
-      top: 6px;
-      right: 50px;
     }
   }
 }
