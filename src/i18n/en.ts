@@ -114,6 +114,22 @@ export const en = {
                 description: 'We create customized digital solutions to make your business stand out.',
 
             }
+        },
+
+        tempaltes: {
+            meta: {
+                description: "Explore custom website templates and previous web projects by HauntedByte. Modern, responsive, and ready to showcase your brand.",
+
+                og: {
+                    title: "Website Templates | HauntedByte",
+                    description: "Check out past projects and templates designed to make your business stand out online.",
+                },
+
+                twiter: {
+                    title: "Website Templates | HauntedByte",
+                    description: "Check out past projects and templates designed to make your business stand out online.",
+                }
+            }
         }
     }
 }

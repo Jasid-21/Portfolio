@@ -64,6 +64,43 @@ export const es = {
         }
     },
 
+    templatesJson: {
+        colorift: {
+            name: "Administrador de esquemas de color - colorift.com",
+            description: "Aplicación web sencilla e intuitiva para generar y gestionar esquemas de color enfocada a la visualización de resultados en tiempo real.",
+        },
+
+        savedtok: {
+            name: "Web scraper de videos online - savedtok.site",
+            description: "Aplicación web full-stack para descargar videos usando Web Scraping enfocada en la plataforma Tiktok.",
+        },
+
+        iceCream: {
+            name: "Plantilla de tienda online de helados",
+            description: "Plantilla enfocada a representar una tienda online de helados y otros dulces.",
+        },
+
+        healthy: {
+            name: "Plantilla landing page de una tienda de comida saludable",
+            description: "Plantilla que representa una tienda online de comida enfocada en lo saludable.",
+        },
+
+        fundesrev: {
+            name: "Fundación dedicada en ayudar a las personas necesitadas - fundesrev.org",
+            description: "Fundación local dedicada a ayudar a las poblaciones necesitadas del municipio.",
+        },
+
+        fastFood: {
+            name: "Plantilla landing page para restaurante de comida rápida",
+            description: "Plantilla que representa un restaurante de comida rápida en general.",
+        },
+
+        electronicaEr: {
+            name: "Plantilla landing page de tienda de electrónica",
+            description: "Plantilla que representa una tienda física de dispositivos electrónicos.",
+        },
+    },
+
     seo: {
         title: 'Desarrollo de software y sitios web profesionales | HauntedByte',
         meta: {
@@ -76,6 +113,22 @@ export const es = {
                 title: 'Desarrollo de software y sitios web profesionales',
                 description: 'Creamos soluciones digitales y personalizadas para hacer destacar tu negocio.',
 
+            }
+        },
+
+        tempaltes: {
+            meta: {
+                description: "Explora plantillas web personalizadas y proyectos web anteriores de HauntedByte. Modernas, responsivas y listas para mostrar tu marca.",
+
+                og: {
+                    title: "Website Templates | HauntedByte",
+                    description: "Consulte proyectos y plantillas anteriores diseñados para hacer que su negocio se destaque en línea.",
+                },
+
+                twiter: {
+                    title: "Website Templates | HauntedByte",
+                    description: "Consulte proyectos y plantillas anteriores diseñados para hacer que su negocio se destaque en línea.",
+                }
             }
         }
     }
