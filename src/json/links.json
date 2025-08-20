@@ -1,32 +1,37 @@
 {
   "links": [
-    
+    {
+      "name": "templates",
+      "url": "/templates",
+      "accent": true,
+      "icon": "fa-html5",
+      "collection": "brands"
+    },
 
     {
       "name": "benefits",
-      "url": "#benefits-section",
+      "url": "/#benefits-section",
       "accent": false,
-      "collection": "",
       "icon": "fa-hand-pointer"
     },
 
     {
       "name": "services",
-      "url": "#services-section",
+      "url": "/#services-section",
       "accent": false,
       "icon": "fa-screwdriver-wrench"
     },
 
     {
       "name": "technologies",
-      "url": "#technologies-section",
+      "url": "/#technologies-section",
       "accent": false,
       "icon": "fa-code"
     },
 
     {
       "name": "contact",
-      "url": "#contact-section",
+      "url": "/#contact-section",
       "accent": false,
       "icon": "fa-phone"
     }

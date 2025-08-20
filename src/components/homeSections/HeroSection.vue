@@ -10,9 +10,16 @@
           <p class="description">
             {{ t('boostYourBussinessSlogan') }}
           </p>
-          <a class="projects-link-btn input-height" href="#contact-section">
-            <span>{{ t('contact') }}</span>
-          </a>
+
+          <div class="buttons-container">
+            <a class="projects-link-btn input-height" href="/templates">
+              <span>{{ t('templates') }}</span>
+            </a>
+
+            <a class="contact-link-btn input-height" href="#contact-section">
+              <span>{{ t('contact') }}</span>
+            </a>
+          </div>
         </div>
       </Transition>
     </div>
@@ -83,14 +90,14 @@ setTimeout(() => {
         margin: 0;
       }
 
-      .projects-link-btn {
+      .projects-link-btn,
+      .contact-link-btn {
         width: 100px;
 
         color: white;
         text-decoration: none;
-        background-color: $accent;
-        border-radius: 10px;
-        border: 2px solid $accent;
+        border-radius: 0.5rem;
+
         transition: all 180ms ease;
 
         display: flex;
@@ -101,10 +108,25 @@ setTimeout(() => {
         font-style: italic;
       }
 
+      .projects-link-btn {
+        background-color: $accent;
+        border: 2px solid $accent;
+      }
+
+      .contact-link-btn {
+        background-color: $primary;
+        border: 2px solid $primary;
+      }
+
       .projects-link-btn:hover {
         cursor: pointer;
         background-color: transparent;
         border: 3px solid $d_accent;
+      }
+
+      .buttons-container {
+        display: flex;
+        gap: 1rem;
       }
     }
 

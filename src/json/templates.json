@@ -1,0 +1,52 @@
+{
+    "templates": [
+        {
+            "name": "colorift",
+            "imageUrl": "https://www.colorift.com/preview.png",
+            "link": "https://www.colorift.com",
+            "technologies": ["Nuxt.js", "Typescript", "Sass"]
+        },
+
+        {
+            "name": "savedtok",
+            "imageUrl": "https://www.savedtok.site/preview.png",
+            "link": "https://www.savedtok.site",
+            "technologies": ["Nuxt.js", "Typescript", "Sass", "Express.js", "Puppeteer"]
+        },
+
+        {
+            "name": "iceCream",
+            "imageUrl": "https://ice-cream-shop-template.vercel.app/preview.png",
+            "link": "https://ice-cream-shop-template.vercel.app",
+            "technologies": ["Vue.js", "Typescript", "Sass"]
+        },
+
+        {
+            "name": "healthy",
+            "imageUrl": "https://helthy-food-service.vercel.app/preview.png",
+            "link": "https://helthy-food-service.vercel.app",
+            "technologies": ["Vue.js", "Typescript", "Sass"]
+        },
+
+        {
+            "name": "fundesrev",
+            "imageUrl": "https://www.fundesrev.org/images/preview.png",
+            "link": "https://www.fundesrev.org",
+            "technologies": ["HTML", "CSS", "Javascript"]
+        },
+
+        {
+            "name": "fastFood",
+            "imageUrl": "https://fast-food-template.vercel.app/preview.png",
+            "link": "https://fast-food-template.vercel.app",
+            "technologies": ["Vue.js", "Typescript", "Sass"]
+        },
+
+        {
+            "name": "electronicaEr",
+            "imageUrl": "https://electronica-e-r.vercel.app/preview.png",
+            "link": "https://electronica-e-r.vercel.app",
+            "technologies": ["Vue.js", "Typescript", "Tailwind"]
+        }
+    ]
+}

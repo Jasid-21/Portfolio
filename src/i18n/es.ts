@@ -18,6 +18,7 @@ export const es = {
     typeSomethingHere: 'Escribe algo aquí',
     thankyou: 'Gracias!',
     illContactAsSoonAsPossible: 'Te contactaré lo más pronto posible',
+    templatesAndApps: 'Templates y Apps',
     benefitsJson: {
         leading: {
             name: "Liderazgo 24 horas",

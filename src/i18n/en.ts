@@ -18,6 +18,7 @@ export const en = {
     typeSomethingHere: 'Type something here',
     thankyou: 'Thank you!',
     illContactAsSoonAsPossible: "I'll contact you as soon as possible",
+    templatesAndApps: 'Templates & Apps',
     benefitsJson: {
         leading: {
             name: "24 hours leading",
@@ -61,6 +62,43 @@ export const en = {
             name: "Support and accompaniment",
             description: "We help you even after the project is delivered, making sure everything works and stays up to date."
         }
+    },
+
+    templatesJson: {
+        colorift: {
+            name: "Color schemes manager - colorift.com",
+            description: "Simple and intuitive web application to generate and manage color schemes focused on real-time results visualization.",
+        },
+
+        savedtok: {
+            name: "Videos web scraper - savedtok.site",
+            description: "Full-stack web application to download videos using Web Scraping focused on Tiktok platform.",
+        },
+
+        iceCream: {
+            name: "Ice cream Online shop template",
+            description: "Template focused on representing an online store of ice cream and other sweets.",
+        },
+
+        healthy: {
+            name: "Videos web scraper - savedtok.site",
+            description: "Template representing an online food store focused on being healthy.",
+        },
+
+        fundesrev: {
+            name: "Foundation dedicated to helping poor people - fundesrev.org",
+            description: "Local foundation dedicated to helping needy populations in the municipality.",
+        },
+
+        fastFood: {
+            name: "Fast food restaurant landing page template",
+            description: "Template representing a fast food restaurant in general.",
+        },
+
+        electronicaEr: {
+            name: "Electronics shop landing page template",
+            description: "Template representing a physical electronic device store.",
+        },
     },
 
     seo: {

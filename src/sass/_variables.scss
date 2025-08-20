@@ -6,7 +6,8 @@ $background: #fbfbfe;
 $primary: #121259;
 $d_primary: #02022b;
 $secondary: #b7b7f1;
-$d_secondary: #39398f;
+$l_secondary: color-mix(in srgb, $secondary, #fff 50%);
+$d_secondary: color-mix(in srgb, $secondary, #000 50%);
 $accent: #664b92;
 $d_accent: #3b2068;
 
