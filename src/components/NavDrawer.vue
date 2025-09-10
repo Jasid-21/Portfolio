@@ -10,7 +10,7 @@
         <li class="link-container"
           v-for="(l, idx) of links.links" :key="idx">
           <a :href="l.url" @click="closeDrawer" :class="{ accent: l.accent }">
-            <fai class="icon" :icon="`fa-${ l.collection || 'solid' } ${ l.icon }`" />
+            <Icon class="icon" :icon="l.icon" height="20"></Icon>
             <span class="link-name">{{ t(l.name) }}</span>
           </a>
         </li>
@@ -21,6 +21,7 @@
 
 <script setup lang="ts">
 import links from '@/json/links.json';
+import { Icon } from '@iconify/vue';
 import { onClickOutside } from '@vueuse/core';
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';

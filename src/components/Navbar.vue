@@ -13,12 +13,12 @@
     <div class="links-container">
       <a class="link-container" v-for="(l, idx) of links.links" :key="idx"
         :class="{ important: l.accent }" :href="l.url">
-        <fai class="icon" :icon="`fa-${ l.collection || 'solid' } ${ l.icon }`" />
+        <Icon class="icon" :icon="l.icon" height="20"></Icon>
         <span class="link-name">{{ t(l.name) }}</span>
       </a>
     </div>
     <div class="bars-button-container" @click="openDrawer">
-      <fai icon="fa-solid fa-bars" />
+      <Icon icon="lucide:menu"></Icon>
     </div>
   </nav>
 
@@ -31,6 +31,7 @@ import NavDrawer from '@/components/NavDrawer.vue';
 import links from '@/json/links.json';
 import { useI18n } from 'vue-i18n';
 import { RouterLink } from 'vue-router';
+import { Icon } from '@iconify/vue';
 
 const { t } = useI18n();
 

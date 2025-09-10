@@ -4,7 +4,7 @@
       "name": "templates",
       "url": "/templates",
       "accent": true,
-      "icon": "fa-html5",
+      "icon": "fa7-brands:html5",
       "collection": "brands"
     },
 
@@ -12,28 +12,28 @@
       "name": "benefits",
       "url": "/#benefits-section",
       "accent": false,
-      "icon": "fa-hand-pointer"
+      "icon": "lucide:pointer"
     },
 
     {
       "name": "services",
       "url": "/#services-section",
       "accent": false,
-      "icon": "fa-screwdriver-wrench"
+      "icon": "lucide:wrench"
     },
 
     {
       "name": "technologies",
       "url": "/#technologies-section",
       "accent": false,
-      "icon": "fa-code"
+      "icon": "lucide:code-xml"
     },
 
     {
       "name": "contact",
       "url": "/#contact-section",
       "accent": false,
-      "icon": "fa-phone"
+      "icon": "lucide:phone"
     }
   ]
 }
