@@ -23,6 +23,9 @@ import { useHead } from '@vueuse/head';
 import { Analytics } from "@vercel/analytics/vue"
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
+//import 'social-proof-cdn';
+
+//setTimeout(() => SocialProof.pushEvent('Usuarios Online', { }), 2000);
 
 const { t } = useI18n();
 useHead({

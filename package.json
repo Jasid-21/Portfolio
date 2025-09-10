@@ -18,6 +18,7 @@
     "@vueuse/head": "^2.0.0",
     "core-js": "^3.8.3",
     "pinia": "^2.1.7",
+    "social-proof-cdn": "github:Jasid-21/social-proof-cdn",
     "vue": "^3.2.13",
     "vue-i18n": "^11.1.11",
     "vue-router": "^4.0.3"
