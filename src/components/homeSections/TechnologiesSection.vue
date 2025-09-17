@@ -1,6 +1,6 @@
 <template>
   <section class="technologies-section" id="technologies-section">
-      <h2 class="section-title">{{ t('technologies') }}</h2>
+      <h2 class="section-title gradient-text">{{ t('technologies') }}</h2>
       <h4 class="section-subtitle"></h4>
       <div class="languages-container">
           <div class="language" v-for="(l, idx) in languages.languages" :key="idx"

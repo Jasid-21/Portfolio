@@ -1,14 +1,6 @@
 {
   "links": [
     {
-      "name": "templates",
-      "url": "/templates",
-      "accent": true,
-      "icon": "fa7-brands:html5",
-      "collection": "brands"
-    },
-
-    {
       "name": "benefits",
       "url": "/#benefits-section",
       "accent": false,
@@ -18,7 +10,7 @@
     {
       "name": "services",
       "url": "/#services-section",
-      "accent": false,
+      "accent": true,
       "icon": "lucide:wrench"
     },
 

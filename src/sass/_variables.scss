@@ -1,15 +1,40 @@
 //* l: lighter version, d: darker version.
 //* s: shadow version, t: transparent version.
 
-$text: #020218;
-$background: #fbfbfe;
+$background: #0f0f23;
 $primary: #121259;
+$l_primary: #323299;
 $d_primary: #02022b;
-$secondary: #b7b7f1;
+$secondary: #6366f1;
 $l_secondary: color-mix(in srgb, $secondary, #fff 50%);
 $d_secondary: color-mix(in srgb, $secondary, #000 50%);
-$accent: #664b92;
+$accent: #8b5cf6;
 $d_accent: #3b2068;
+
+:root {
+  --dark-primary: color-mix(in srgb, var(--primary), #000 50%);
+  --light-secondary: color-mix(in srgb, var(--secondary), #fff 50%);
+  --dark-secondary: color-mix(in srgb, var(--secondary), #000 50%);
+  --dark-accent: #3b2068;
+
+  --primary: #121259;
+  --secondary: #6366f1;
+  --accent: #8b5cf6;
+  --background: #0f0f23;
+  --surface: #1a1a2e;
+  --surface-light: #16213e;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --border: #27272a;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+  --gradient-surface: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+  --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.3);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
 
 
 //* Screen sizes;
@@ -38,3 +63,6 @@ $xl: 1280px;
     --x_pad: 7rem;
   }
 }
+
+//Classes.
+/* Utility classes */
