@@ -14,22 +14,17 @@
             {{ t('boostYourBussinessSlogan') }}
           </p>
 
-          <a type="submit" class="submit-button">
-            <Icon icon="lucide:send" />
-            <span>{{ t('contact') }}</span>
-          </a>
-
-          <!--
           <div class="buttons-container">
-            <a class="projects-link-btn input-height" href="/templates">
-              <span>{{ t('templates') }}</span>
+            <a class="go-to-services-button" href="#services-section">
+              <Icon icon="lucide:wrench" />
+              <span>{{ t('services') }}</span>
             </a>
 
-            <a class="contact-link-btn input-height" href="#contact-section">
+            <a class="go-to-contact-button" href="#contact-section">
+              <Icon icon="lucide:phone"></Icon>
               <span>{{ t('contact') }}</span>
             </a>
           </div>
-        -->
         </div>
       </Transition>
     </div>
@@ -37,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue';
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
@@ -199,28 +195,49 @@ setTimeout(() => {
       .buttons-container {
         display: flex;
         gap: 1rem;
-      }
 
-      .submit-button {
-        width: fit-content;
-        min-width: 10rem;
-        padding: 1rem;
-        font-size: 1.125rem;
-        font-weight: 600;
-        border-radius: 0.5rem;
-        background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-        color: white;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        transition: all 0.2s ease;
+        .go-to-services-button {
+          width: fit-content;
+          min-width: 10rem;
+          padding: 1rem;
+          font-size: 1.125rem;
+          font-weight: 600;
+          border-radius: 0.5rem;
+          background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+          color: white;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          transition: all 0.2s ease;
 
-        &:hover:not(:disabled) {
-          transform: scale(1.02);
-          box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+          &:hover:not(:disabled) {
+            transform: scale(1.02);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+          }
+        }
+
+        .go-to-contact-button {
+          padding: 1rem 2rem;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          font-weight: 600;
+          border: 2px solid #a855f7;
+          color: #c084fc;
+          border-radius: 0.5rem;
+
+          transition: all 300ms ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+
+          &:hover {
+            background-color: #a855f7;
+            color: #fff;
+          }
         }
       }
     }
