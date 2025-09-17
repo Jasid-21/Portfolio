@@ -127,6 +127,7 @@ const onLeave = (el) => {
 .services-section {
   padding: 5rem 0;
   position: relative;
+  overflow: hidden;
 }
 
 .container {

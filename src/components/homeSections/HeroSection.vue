@@ -198,7 +198,6 @@ setTimeout(() => {
 
         .go-to-services-button {
           width: fit-content;
-          min-width: 10rem;
           padding: 1rem;
           font-size: 1.125rem;
           font-weight: 600;
