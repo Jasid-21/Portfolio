@@ -1,6 +1,7 @@
 export const en = {
     services: 'Services',
     templates: 'Templates',
+    blog: 'Blog',
     servicesSubtitle: 'Complete solutions for your digital presence',
     turnWebsiteIntoReality: 'Turn your website idea into reality',
     boostYourBussinessSlogan: 'Boost your business with an intuitive and customer-friendly website',

@@ -1,6 +1,6 @@
 <template>
   <Transition name="drawer" appear>
-    <div v-if="show" class="nav-drawer" ref="drawer">
+    <div v-if="show" class="nav-drawer">
       <div class="drawer-content">
         <!-- Header -->
         <div class="drawer-header">
@@ -64,21 +64,16 @@
 <script setup lang="ts">
 import links from '@/json/links.json';
 import { Icon } from '@iconify/vue';
-import { onClickOutside } from '@vueuse/core';
-import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
 const emit = defineEmits(['closeDrawer']);
-const props = defineProps({
+defineProps({
   show: { type: Boolean, required: true },
 });
-const drawer = ref<HTMLElement>();
 const closeDrawer = () => emit('closeDrawer');
 
 //* Functions.
-onClickOutside(drawer, closeDrawer);
-
 const onLinkEnter = (el: HTMLElement, index: number) => {
   el.style.transform = 'translateX(50px)'
   el.style.opacity = '0'
@@ -101,7 +96,7 @@ const onLinkEnter = (el: HTMLElement, index: number) => {
   bottom: 0;
   width: 100%;
   max-width: 24rem;
-  z-index: 999;
+  z-index: 9999;
   background: rgba(17, 24, 39, 0.95);
   backdrop-filter: blur(20px);
   border-left: 1px solid rgba(255, 255, 255, 0.1);

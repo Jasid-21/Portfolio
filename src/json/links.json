@@ -22,6 +22,13 @@
     },
 
     {
+      "name": "blog",
+      "url": "https://blog.hauntedbyte.site",
+      "accent": false,
+      "icon": "lucide:notebook-pen"
+    },
+
+    {
       "name": "contact",
       "url": "/#contact-section",
       "accent": false,
