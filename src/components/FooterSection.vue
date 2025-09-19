@@ -44,11 +44,17 @@ footer {
     padding: 0;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 0.3rem;
+    column-gap: 4rem;
     row-gap: 0.3rem;
+    font-weight: 400;
+    font-size: 0.95rem;
+
+    @media (max-width: 420px) {
+      justify-content: flex-start;
+    }
 
     a {
       color: inherit;
